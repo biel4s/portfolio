@@ -1,0 +1,19 @@
+.App {
+    text-align: center;
+    color: white;
+    .header {
+        background-color: #1e2127;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        background-color: #282c34;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+    }
+}

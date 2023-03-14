@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Header() {
+export default function Content() {
     return (
-        <div className="header">
+        <div className="content">
             <h1>
-                Header
+                Content
             </h1>
         </div>
     )
