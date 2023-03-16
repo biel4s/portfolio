@@ -1,13 +1,17 @@
 import React from 'react';
-import ReactCurvedText from "react-curved-text";
+import logo from '../images/logo-white.png'
 
 export default function Header() {
     return (
         <div className="header">
-            <h1>
-                <span className="char1">K</span>
-                <span className="char1">B</span>
-            </h1>
+            <img src={logo} width="100" height="60"/>
+            <div className="header-right">
+                <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
         </div>
     )
 }

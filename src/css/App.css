@@ -3,15 +3,25 @@
   color: white;
 }
 .App .header {
-  background-color: #1e2127;
-  min-height: 10vh;
+  background-color: #23252c;
+  min-height: 15vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+.App .header .header-right ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.App .header .header-right ul li {
+  padding: 1em;
 }
 .App .content {
   background-color: #282c34;
-  min-height: 90vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
