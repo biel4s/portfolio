@@ -4,7 +4,9 @@ import logo from '../images/logo-white.png'
 export default function Header() {
     return (
         <div className="header">
-            <img src={logo} width="100" height="60"/>
+            <div className="header-left">
+                <img src={logo} width="100" height="60" alt="logo"/>
+            </div>
             <div className="header-right">
                 <ul>
                     <li>About</li>
