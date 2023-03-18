@@ -15,12 +15,13 @@
                 list-style: none;
                 li {
                     padding: 1em;
+                    font-size: 1.5rem;
                 }
             }
         }
     }
     .content {
-        background-color: #282c34;
+        background: linear-gradient(45deg,#282c34, #34383f);
         min-height: 85vh;
         display: flex;
         align-items: center;
@@ -38,6 +39,5 @@
                 font-size: 20px;
             }
         }
-
     }
 }
