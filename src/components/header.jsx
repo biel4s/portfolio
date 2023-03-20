@@ -5,7 +5,8 @@ export default function Header() {
     return (
         <div className="header">
             <div className="header-left">
-                <img src={logo} width="100" height="60" alt="logo"/>
+                <img src={logo} width="100" height="60" alt="logo" />
+                <h2>Kamil<span> Bielawski</span></h2>
             </div>
             <div className="header-right">
                 <ul>

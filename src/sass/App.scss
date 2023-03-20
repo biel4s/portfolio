@@ -1,12 +1,24 @@
+@import "_variables.scss";
+
 .App {
     color: white;
     .header {
-        background-color: #23252c;
+        background-color: #282c34;
         min-height: 15vh;
-        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 100px;
+        .header-left {
+            display: flex;
+            h2 {
+                margin: 0;
+                padding: 0.8rem 0;
+            }
+            span {
+                color: $primary-color;
+            }
+        }
         .header-right  {
             ul {
                 display: flex;
@@ -21,7 +33,7 @@
         }
     }
     .content {
-        background: linear-gradient(45deg,#282c34, #34383f);
+        background-color:#282c34;
         min-height: 85vh;
         display: flex;
         align-items: center;
@@ -30,9 +42,8 @@
         .content-left {
             max-width: 30vw;
             h1, h3 {
-                color: #61dafb;
-                margin-top: 0;
-                margin-bottom: 0;
+                color: $primary-color;
+                margin: 0;
             }
             p {
                 text-align: justify;
