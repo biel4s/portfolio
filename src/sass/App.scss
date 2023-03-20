@@ -11,9 +11,14 @@
         padding: 0 100px;
         .header-left {
             display: flex;
+            .logo {
+                padding-right: 10px;
+            }
             h2 {
                 margin: 0;
-                padding: 0.8rem 0;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
             }
             span {
                 color: $primary-color;
@@ -45,9 +50,17 @@
                 color: $primary-color;
                 margin: 0;
             }
+            h3 {
+                font-weight: 400;
+            }
             p {
                 text-align: justify;
                 font-size: 20px;
+            }
+        }
+        .content-right {
+            .myself {
+                border-radius: 50%;
             }
         }
     }
