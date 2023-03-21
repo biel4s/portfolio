@@ -1,13 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 .App {
   color: white;
+  background: linear-gradient(45deg, #0f1013, #37496C);
 }
 .App .header {
-  background-color: #23252c;
+  background-image: url(../images/noise.png);
   min-height: 15vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.App .header .header-left {
+  display: flex;
+}
+.App .header .header-left .logo {
+  padding-right: 10px;
+}
+.App .header .header-left h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.App .header .header-left span {
+  color: #61dafb;
 }
 .App .header .header-right ul {
   display: flex;
@@ -17,10 +33,10 @@
 }
 .App .header .header-right ul li {
   padding: 1em;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .App .content {
-  background: linear-gradient(45deg, #282c34, #34383f);
+  background-image: url(../images/noise.png);
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -32,10 +48,16 @@
 }
 .App .content .content-left h1, .App .content .content-left h3 {
   color: #61dafb;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+}
+.App .content .content-left h3 {
+  font-weight: 400;
 }
 .App .content .content-left p {
   text-align: justify;
   font-size: 20px;
+}
+.App .content .content-right .myself {
+  border-radius: 50%;
+  border: dashed white 2px;
 }

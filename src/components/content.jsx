@@ -3,7 +3,7 @@ import myself from '../images/myself.png'
 
 export default function Content() {
     return (
-        <div className="content">
+        <div className="content grain">
             <div className="content-left">
                 <p>Hi, my name is</p>
                 <h1>Kamil Bielawski.</h1>
