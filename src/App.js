@@ -1,12 +1,12 @@
 import Header from './components/header';
-import Content from './components/content';
+import Home from './components/home';
 import './sass/App.scss';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Content />
+      <Home />
     </div>
   );
 }

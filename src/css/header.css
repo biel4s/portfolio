@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+.header {
+  background-image: url(../images/noise.png);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+.header .header-left {
+  display: flex;
+}
+.header .header-left .logo {
+  padding-right: 15px;
+}
+.header .header-left h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.header .header-left span {
+  color: #61dafb;
+}
+.header .header-right ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header .header-right ul li {
+  padding: 1em;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}

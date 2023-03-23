@@ -1,63 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
-.App {
-  color: white;
-  background: linear-gradient(45deg, #0f1013, #37496C);
-}
-.App .header {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.header {
   background-image: url(../images/noise.png);
-  min-height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 1rem 0;
 }
-.App .header .header-left {
+.header .header-left {
   display: flex;
 }
-.App .header .header-left .logo {
-  padding-right: 10px;
+.header .header-left .logo {
+  padding-right: 15px;
 }
-.App .header .header-left h2 {
+.header .header-left h2 {
   margin: 0;
   display: flex;
   align-items: center;
   font-weight: 400;
+  font-size: 1.2rem;
 }
-.App .header .header-left span {
-  color: #61dafb;
+.header .header-left span {
+  color: #00C8FF;
 }
-.App .header .header-right ul {
+.header .header-right ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.App .header .header-right ul li {
+.header .header-right ul li {
   padding: 1em;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
-.App .content {
+
+.home {
   background-image: url(../images/noise.png);
-  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
+  height: 90vh;
 }
-.App .content .content-left {
-  max-width: 30vw;
+.home .content {
+  max-width: 470px;
+  text-align: center;
+  padding-bottom: 250px;
 }
-.App .content .content-left h1, .App .content .content-left h3 {
-  color: #61dafb;
+.home .content h1 {
+  margin: 0;
+  color: #00C8FF;
+  font-weight: 900;
+  font-size: 2.2em;
+  padding-top: 0.8rem;
+}
+.home .content h3 {
+  margin: -0.5rem 0 0;
+  color: rgba(0, 200, 255, 0.6);
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+.home .content p {
+  font-size: 1.5rem;
   margin: 0;
 }
-.App .content .content-left h3 {
-  font-weight: 400;
-}
-.App .content .content-left p {
-  text-align: justify;
-  font-size: 20px;
-}
-.App .content .content-right .myself {
-  border-radius: 50%;
-  border: dashed white 2px;
+
+.App {
+  color: white;
+  background: linear-gradient(45deg, #0f1013, #2e3d5a);
 }

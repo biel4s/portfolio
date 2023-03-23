@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+.home {
+  background-image: url(../images/noise.png);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+.home .home-left {
+  max-width: 25vw;
+}
+.home .home-left h1,
+.home .home-left h3 {
+  color: #61dafb;
+  margin: 0;
+}
+.home .home-left h3 {
+  font-weight: 400;
+}
+.home .home-left p {
+  text-align: justify;
+  font-size: 20px;
+}
