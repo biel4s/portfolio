@@ -10,7 +10,7 @@ export default function Home() {
                 <p>Hello, my name is</p>
                 <h1>Kamil Bielawski</h1>
                 <h3>Front-end developer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis sagittis sodales. Fusce id lacinia risus, eu sodales nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>With a passion for creating beautiful, responsive websites and a dedication to learning the latest front-end technologies</p>
             </div>
             <button className="btn">
                 View my projects 

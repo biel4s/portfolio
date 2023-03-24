@@ -1,5 +1,6 @@
 import Header from './components/header';
 import Home from './components/home';
+import About from './components/about';
 import './sass/App.scss';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Home />
+      <About />
     </div>
   );
 }
