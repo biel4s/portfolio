@@ -10,7 +10,7 @@
 
     .header-left {
         display: flex;
-
+        cursor: pointer;
         .logo {
             padding-right: 15px;
         }
@@ -36,6 +36,7 @@
             list-style: none;
 
             li {
+                cursor: pointer;
                 padding: 1em;
                 font-size: 1.2rem;
             }

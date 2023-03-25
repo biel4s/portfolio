@@ -45,9 +45,17 @@
         font-size: 1.2rem;
         padding: 15px 30px;
         margin-top: 50px;
+        transition: all 0.5s;
         .arrow {
-            padding-left: 30px;
-            scale: 110%;
+            margin-left: 20px;
+            transition: all 0.3s;
+        }
+        &:hover {
+            background-color: $primary-color;
+            .arrow {
+                transform: rotate(90deg);
+                top: 50%;
+            }
         }
     }
 }

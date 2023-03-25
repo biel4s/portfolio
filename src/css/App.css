@@ -11,6 +11,7 @@
 }
 .header .header-left {
   display: flex;
+  cursor: pointer;
 }
 .header .header-left .logo {
   padding-right: 15px;
@@ -32,6 +33,7 @@
   list-style: none;
 }
 .header .header-right ul li {
+  cursor: pointer;
   padding: 1em;
   font-size: 1.2rem;
 }
@@ -77,10 +79,18 @@
   font-size: 1.2rem;
   padding: 15px 30px;
   margin-top: 50px;
+  transition: all 0.5s;
 }
 .home .btn .arrow {
-  padding-left: 30px;
-  scale: 110%;
+  margin-left: 20px;
+  transition: all 0.3s;
+}
+.home .btn:hover {
+  background-color: #00C8FF;
+}
+.home .btn:hover .arrow {
+  transform: rotate(90deg);
+  top: 50%;
 }
 
 .about {
@@ -95,5 +105,5 @@
 
 .App {
   color: white;
-  background: linear-gradient(45deg, #0f1013, #2e3d5a);
+  background: linear-gradient(to right, #0f1013, #2e3d5a);
 }
