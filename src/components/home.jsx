@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <button className="btn">
                 View my projects 
-                <FontAwesomeIcon className="arrow" icon={ faArrowRight }>::before</FontAwesomeIcon>
+                <FontAwesomeIcon className="arrow" icon={ faArrowRight } />
             </button>
         </div>
     )

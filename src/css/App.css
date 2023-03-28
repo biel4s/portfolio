@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 .header {
   background-image: url(../images/noise.png);
   display: flex;
@@ -98,12 +99,91 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
-  height: 90vh;
+  height: 80vh;
+}
+.about h2 {
+  color: #00C8FF;
+}
+.about h2:after {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  top: calc(100% + 90px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about p {
+  max-width: 50vw;
+  font-size: 1.5rem;
+}
+.about p span {
+  color: #00C8FF;
+}
+
+.project {
+  background-image: url(../images/noise.png);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+.project h2 {
+  color: #00C8FF;
+}
+.project h2:after {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  top: calc(100% + 90px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.project .content {
+  display: flex;
+  width: 100%;
+  min-height: 70vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.project .content .mockup {
+  max-width: 50vw;
+}
+.project .content .description {
+  max-width: 30vw;
+  text-align: end;
+}
+.project .content .description h2 {
+  color: #00C8FF;
+}
+.project .content .description p {
+  font-size: 1.4rem;
+}
+.project .content .description .description-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.project .content .description .description-bottom .github {
+  color: rgba(0, 200, 255, 0.6);
+  transform: scale(80%);
+  padding-right: 50px;
+  cursor: pointer;
+}
+.project .content .description .description-bottom span {
+  font-size: 1.2rem;
+  color: rgba(0, 200, 255, 0.6);
 }
 
 .App {
   color: white;
-  background: linear-gradient(to right, #0f1013, #2e3d5a);
+  background: linear-gradient(to right, #17181d, #2e3d5a);
 }
