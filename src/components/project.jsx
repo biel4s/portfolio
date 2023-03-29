@@ -15,7 +15,7 @@ export default function Project(props) {
                     <h2>{props.title}</h2>
                     <p>{props.summary}</p>
                     <div className="description-bottom">
-                        <a href="https://github.com/biel4s/portfolio-react" target="_blank">
+                        <a href="https://github.com/biel4s/portfolio-react" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faCoffee} alt="github" className="github" />
                         </a>
                         <span>{props.technology}</span>
