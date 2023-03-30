@@ -7,11 +7,11 @@ export default function Project(props) {
     return (
         <div className="project">
             <h2>Projects</h2>
-            <div className="content">
-                <div className="mockup">
+            <div className="project-content">
+                <div className="project-mockup">
                     <img src={mockup} alt="mockup" width="800" />
                 </div>
-                <div className="description">
+                <div className="project-description">
                     <h2>{props.title}</h2>
                     <p>{props.summary}</p>
                     <div className="description-bottom">

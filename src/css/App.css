@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 .header {
   background-image: url(../images/noise.png);
   display: flex;
@@ -48,28 +49,28 @@
   font-size: calc(10px + 2vmin);
   height: 90vh;
 }
-.home .content {
+.home .home-content {
   max-width: 470px;
   text-align: center;
 }
-.home .content h1 {
+.home .home-content h1 {
   margin: 0;
   color: #00C8FF;
   font-weight: 900;
   font-size: 2.2em;
   padding-top: 0.8rem;
 }
-.home .content h3 {
+.home .home-content h3 {
   margin: -0.5rem 0 0;
   color: rgba(0, 200, 255, 0.6);
   font-weight: 400;
   padding-bottom: 1.5rem;
 }
-.home .content p {
+.home .home-content p {
   font-size: 1.5rem;
   margin: 0;
 }
-.home .btn {
+.home .home-btn {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -82,14 +83,14 @@
   margin-top: 50px;
   transition: all 0.5s;
 }
-.home .btn .arrow {
+.home .home-btn .arrow {
   margin-left: 20px;
   transition: all 0.3s;
 }
-.home .btn:hover {
+.home .home-btn:hover {
   background-color: #00C8FF;
 }
-.home .btn:hover .arrow {
+.home .home-btn:hover .arrow {
   transform: rotate(90deg);
   top: 50%;
 }
@@ -102,10 +103,10 @@
   font-size: calc(10px + 2vmin);
   height: 80vh;
 }
-.about h2 {
+.about .about-title {
   color: #00C8FF;
 }
-.about h2:after {
+.about .about-title:after {
   content: "";
   background: white;
   position: absolute;
@@ -146,7 +147,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.project .content {
+.project .project-content {
   display: flex;
   width: 100%;
   min-height: 70vh;
@@ -154,33 +155,56 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.project .content .mockup {
+.project .project-content .project-mockup {
   max-width: 50vw;
 }
-.project .content .description {
+.project .project-content .project-description {
   max-width: 30vw;
   text-align: end;
 }
-.project .content .description h2 {
+.project .project-content .project-description h2 {
   color: #00C8FF;
 }
-.project .content .description p {
+.project .project-content .project-description p {
   font-size: 1.4rem;
 }
-.project .content .description .description-bottom {
+.project .project-content .project-description .description-bottom {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
-.project .content .description .description-bottom .github {
+.project .project-content .project-description .description-bottom .github {
   color: rgba(0, 200, 255, 0.6);
   transform: scale(80%);
   padding-right: 50px;
   cursor: pointer;
 }
-.project .content .description .description-bottom span {
+.project .project-content .project-description .description-bottom span {
   font-size: 1.2rem;
   color: rgba(0, 200, 255, 0.6);
+}
+
+.contact {
+  background-image: url(../images/noise.png);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+.contact .contact-title {
+  color: #00C8FF;
+}
+.contact .contact-titlecontact-title:after {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  top: calc(100% + 90px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .App {
