@@ -10,6 +10,7 @@
     height: 80vh;
     .about-title {
         color: $primary-color;
+        text-transform: uppercase;
         &:after {
             content: "";
             background: white;

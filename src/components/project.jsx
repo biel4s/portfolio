@@ -6,7 +6,7 @@ import mockup from '../images/mockup.png'
 export default function Project(props) {
     return (
         <div className="project">
-            <h2>Projects</h2>
+            <h2 className="project-title">Projects</h2>
             <div className="project-content">
                 <div className="project-mockup">
                     <img src={mockup} alt="mockup" width="800" />

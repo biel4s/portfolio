@@ -10,6 +10,7 @@
     height: 100vh;
     .contact-title {
         color: $primary-color;
+        text-transform: uppercase;
         &contact-title:after {
             content: "";
             background: white;
@@ -21,5 +22,8 @@
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+    p {
+        max-width: 40vw;
     }
 }
