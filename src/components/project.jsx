@@ -10,6 +10,7 @@ export default function Project(props) {
             <div className="project-content">
                 <div className="project-mockup">
                     <img src={mockup} alt="mockup" width="800" />
+                    <img src={props.preview} alt="preview" width="800" />
                 </div>
                 <div className="project-description">
                     <h2>{props.title}</h2>

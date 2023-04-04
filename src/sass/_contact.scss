@@ -6,21 +6,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: calc(10px + 2vmin);
-    height: 100vh;
+    height: 80vh;
     .contact-title {
         color: $primary-color;
         text-transform: uppercase;
-        &contact-title:after {
+        font-size: 2.5rem;
+        &:after {
             content: "";
+            display: block;
             background: white;
             position: absolute;
-            width: 50px;
+            width: 75px;
             height: 5px;
             border-radius: 5px;
-            top: calc(100% + 90px);
             left: 50%;
             transform: translateX(-50%);
+            margin-top: 10px;
         }
     }
     p {
