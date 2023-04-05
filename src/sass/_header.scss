@@ -34,11 +34,22 @@
             margin: 0;
             padding: 0;
             list-style: none;
-
             li {
                 cursor: pointer;
-                padding: 1em;
+                padding: 0.5rem 1rem;
                 font-size: 1.2rem;
+                &:after {
+                    display: block;
+                    content: "";
+                    border-bottom: solid 3px $primary-color;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    transform: scaleX(0);
+                    transition: transform 0.2s ease-in-out;
+                }
+                &:hover:after {
+                    transform: scaleX(1);
+                }
             }
         }
     }
