@@ -3,6 +3,7 @@ import Home from './components/home';
 import About from './components/about';
 import Project from './components/project';
 import Contact from './components/contact';
+import Footer from './components/footer';
 import './sass/App.scss';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             />
 
             <Contact />
+            <Footer />
         </div>
     );
 }
