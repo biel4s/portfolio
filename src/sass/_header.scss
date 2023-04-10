@@ -2,10 +2,10 @@
 
 .header {
     background-image: url(../images/noise.png);
+    display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem 0;
-
     .header-left {
         display: flex;
         cursor: pointer;
