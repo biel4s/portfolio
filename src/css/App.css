@@ -7,9 +7,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 .header {
   background-image: url(../images/noise.png);
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .header .header-left {
   display: flex;
@@ -33,10 +35,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 .header .header-right ul li {
   cursor: pointer;
   padding: 0.5rem 1rem;
+  margin-top: 15px;
   font-size: 1.2rem;
 }
 .header .header-right ul li:after {
@@ -144,24 +148,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-}
-.project .project-title {
-  color: #00C8FF;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-}
-.project .project-title:after {
-  content: "";
-  display: block;
-  background: white;
-  position: absolute;
-  width: 75px;
-  height: 5px;
-  border-radius: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 10px;
+  height: 80vh;
 }
 .project .project-content {
   display: flex;
@@ -176,7 +163,7 @@
 }
 .project .project-content .project-description h2 {
   color: #00C8FF;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .project .project-content .project-description p {
   font-size: 1.4rem;
@@ -200,6 +187,7 @@
 
 .contact {
   background-image: url(../images/noise.png);
+  display: flex;
   align-items: center;
   flex-direction: column;
   height: 80vh;
@@ -288,4 +276,24 @@
 .App {
   color: white;
   background: linear-gradient(to right, #17181d, #2e3d5a);
+}
+.App .project-title {
+  background-image: url(../images/noise.png);
+  margin: 0;
+  color: #00C8FF;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.App .project-title:after {
+  content: "";
+  display: block;
+  background: white;
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
 }

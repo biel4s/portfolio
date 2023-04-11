@@ -6,7 +6,6 @@ import mockup from '../images/mockup.png'
 export default function Project(props) {
     return (
         <div className="project">
-            <h2 className="project-title">Projects</h2>
             <div className="project-content">
                 <div className="project-mockup">
                     <img src={mockup} alt="mockup" width="800" />
@@ -16,7 +15,7 @@ export default function Project(props) {
                     <h2>{props.title}</h2>
                     <p>{props.summary}</p>
                     <div className="description-bottom">
-                        <a href="https://github.com/biel4s/portfolio-react" target="_blank" rel="noreferrer">
+                        <a href={props.link} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faCoffee} alt="github" className="github" />
                         </a>
                         <span>{props.technology}</span>
