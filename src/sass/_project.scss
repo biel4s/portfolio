@@ -12,6 +12,16 @@
         min-height: 70vh;
         align-items: center;
         justify-content: space-evenly;
+        .project-mockup {
+            position: relative;
+            .preview{
+                position: absolute;
+                top: 32px;
+                left: 101px;
+                width: 601px;
+                height: 378px;
+            }
+        }
         .project-description {
             max-width: 30vw;
             text-align: end;

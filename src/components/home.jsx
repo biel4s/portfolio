@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/fontawesome-free-solid';
 //import myself from '../images/myself.png'
 
-export default function Home() {
+export default function Home(props) {
+
+    // const scrollToProject = () => {
+    //     projectRef.current.scrollIntoView({ behavior: 'smooth'});
+    // };
+
     return (
         <div className="home">
             <div className="home-content">

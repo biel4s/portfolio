@@ -4,12 +4,13 @@ import { faCoffee } from '@fortawesome/fontawesome-free-solid';
 import mockup from '../images/mockup.png'
 
 export default function Project(props) {
+
     return (
         <div className="project">
             <div className="project-content">
                 <div className="project-mockup">
-                    <img src={mockup} alt="mockup" width="800" />
-                    <img src={props.preview} alt="preview" width="800" />
+                    <img src={mockup} alt="mockup" className="mockup" width="800" />
+                    <img src={props.preview} alt="preview" className="preview" width="800" />
                 </div>
                 <div className="project-description">
                     <h2>{props.title}</h2>
