@@ -5,11 +5,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 75vh;
+    height: 65vh;
     .project-content {
         display: flex;
         width: 70%;
-        min-height: 70vh;
         align-items: center;
         justify-content: space-evenly;
         .project-mockup {
@@ -36,7 +35,7 @@
             }
             .description-bottom {
                 display: flex;
-                align-items: center;
+                //align-items: center;
                 .link {
                     opacity: 60%;
                     width: 25px;
