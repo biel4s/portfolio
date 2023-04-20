@@ -17,24 +17,26 @@ export default function App() {
             <About />
             <h2 className="project-title">Projects</h2>
             <Project
-                ref={projectRef}
+                position="left"
                 title="Weather In"
                 summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                preview="https://i.imgur.com/XlvWOTH.png"
+                preview="https://i.imgur.com/7AtLsD9.png"
                 link="https://github.com/biel4s/weather-in-react"
                 technology={`React${String.fromCharCode(160).repeat(8)}Weather API${String.fromCharCode(160).repeat(8)}Sass`}
             />
             <Project
+                position="right"
                 title="Calculator"
                 summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                preview="https://i.imgur.com/XHYopER.png"
+                preview="https://i.imgur.com/HfQdED6.png"
                 link="https://github.com/biel4s/calculator-react"
                 technology={`React${String.fromCharCode(160).repeat(8)}Numbers API${String.fromCharCode(160).repeat(8)}Sass`}
             />
             <Project
+                position="left"
                 title="Portfolio"
                 summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                preview=""
+                preview="https://i.imgur.com/bccNO1C.jpeg"
                 link="https://github.com/biel4s/portfolio-react"
                 technology={`React${String.fromCharCode(160).repeat(8)}Sass`}
             />
