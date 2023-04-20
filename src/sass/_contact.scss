@@ -44,7 +44,8 @@
         textarea {
             min-height: 150px;
             font-size: 1.5rem;
-            
+            max-height: 320px;
+            max-width: 1500px;
         }
     }
     .home-btn {
