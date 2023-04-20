@@ -18,10 +18,10 @@ export default function Project(props) {
                     <img src={mockup} alt="mockup" className="mockup" width="800" />
                     <img src={props.preview} alt="preview" className="preview" width="800" />
                 </div>
-                <div className="project-description">
+                <div className="project-description" style={projectStyle}>
                     <h2>{props.title}</h2>
                     <p>{props.summary}</p>
-                    <div className="description-bottom">
+                    <div className="description-bottom" >
                         <a href={props.link} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faCoffee} alt="github" className="github" />
                         </a>
@@ -34,10 +34,10 @@ export default function Project(props) {
     else if (props.position === "right") {
         content = (
             <div className="project-content" >
-                <div className="project-description">
+                <div className="project-description" style={projectStyle}>
                     <h2>{props.title}</h2>
                     <p>{props.summary}</p>
-                    <div className="description-bottom">
+                    <div className="description-bottom" >
                         <a href={props.link} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faCoffee} alt="github" className="github" />
                         </a>
@@ -53,7 +53,7 @@ export default function Project(props) {
     }
 
 return (
-    <div className="project" style={projectStyle}>
+    <div className="project">
             {content}
     </div>
 )}

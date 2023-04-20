@@ -8,3 +8,16 @@ $black-weight: 900;
 $primary-color: #00C8FF;
 $opacity-color: #00c8ff99;
 $opacity2-color: #115d72cc;
+
+@mixin header-underline {
+    content: "";
+    display: block;
+    background: white;
+    position: absolute;
+    width: 75px;
+    height: 3px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+};
