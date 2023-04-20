@@ -23,7 +23,9 @@ export default function App() {
                 preview="https://i.imgur.com/7AtLsD9.png"
                 github="https://github.com/biel4s/weather-in-react"
                 netlify="https://react-weather-in.netlify.app"
-                technology={`React${String.fromCharCode(160).repeat(8)}Weather API${String.fromCharCode(160).repeat(8)}Sass`}
+                technology1="React"
+                technology2="Weather API"
+                technology3="Sass"
             />
             <Project
                 position="right"
@@ -32,7 +34,9 @@ export default function App() {
                 preview="https://i.imgur.com/HfQdED6.png"
                 github="https://github.com/biel4s/calculator-react"
                 netlify="https://react-calculator25.netlify.app"
-                technology={`React${String.fromCharCode(160).repeat(8)}Numbers API${String.fromCharCode(160).repeat(8)}Sass`}
+                technology1="React"
+                technology2="Numbers API"
+                technology3="Sass"
             />
             <Project
                 position="left"

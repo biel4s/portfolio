@@ -1,8 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faUpload } from '@fortawesome/fontawesome-free-solid';
 import mockup from '../images/mockup.png'
-import github from '../images/github.svg'
+import github from '../images/github.png'
+import netlify from '../images/netlify.png'
 
 
 export default function Project(props) {
@@ -24,12 +23,14 @@ export default function Project(props) {
                     <p>{props.summary}</p>
                     <div className="description-bottom" style={projectStyle}>
                         <a href={props.github} target="_blank" rel="noreferrer">
-                            <img src={github} alt="github" className="link" id="github"/>
+                            <img src={github} alt="github" className="link"/>
                         </a>
                         <a href={props.netlify} target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faUpload} alt="netlify" className="link" id="netlify"/>
+                            <img src={netlify} alt="netlify" className="link" />
                         </a>
-                        <p>{props.technology}</p>
+                        <span>{props.technology1}</span>
+                        <span>{props.technology2}</span>
+                        <span>{props.technology3}</span>
                     </div>
                 </div>
             </div>
@@ -42,12 +43,14 @@ export default function Project(props) {
                     <h2>{props.title}</h2>
                     <p>{props.summary}</p>
                     <div className="description-bottom" >
-                        <p>{props.technology}</p>
+                        <span>{props.technology1}</span>
+                        <span>{props.technology2}</span>
+                        <span>{props.technology3}</span>
                         <a href={props.github} target="_blank" rel="noreferrer">
                             <img src={github} alt="github" className="link" id="github"/>
                         </a>
                         <a href={props.netlify} target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faUpload} alt="netlify" className="link" id="netlify"/>
+                            <img src={netlify} alt="netlify" className="link" id="netlify"/>
                         </a>
                     </div>
                 </div>
@@ -62,18 +65,7 @@ export default function Project(props) {
         content = (
             <div className="project-content" >
                 <div className="project-mockup">
-                    <img src={mockup} alt="mockup" className="mockup" width="800" />
-                    <img src={props.preview} alt="preview" className="preview" width="800" />
-                </div>
-                <div className="project-description" style={projectStyle}>
-                    <h2>{props.title}</h2>
-                    <p>{props.summary}</p>
-                    <div className="description-bottom" style={projectStyle}>
-                        <p>{props.technology}</p>
-                        <a href={props.github} target="_blank" rel="noreferrer">
-                            <img src={github} alt="github" className="link" id="github"/>
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
         );

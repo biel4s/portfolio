@@ -17,9 +17,9 @@
             z-index: 1;
             .preview{
                 position: absolute;
-                top: 27px;
-                left:87px;
-                width: 540px;
+                top: 28px;
+                left:88px;
+                width: 525px;
                 height: 330px;
                 z-index: -1;
             }
@@ -29,22 +29,23 @@
             padding-bottom: 75px;
             h2 {
                 color: $primary-color;
-                font-size: 2.4rem;
+                font-size: 2.5rem;
             }
             p {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             .description-bottom {
                 display: flex;
                 align-items: center;
                 .link {
-                        color: $opacity-color;
-                        //font-size: 2rem;
-                        cursor: pointer;
+                        opacity: 60%;
+                        width: 40px;
+                        cursor: pointer;   
                     }
-                p {
+                span {
                     color: $opacity-color;
                     font-size: 1.2rem;
+                    padding: 0 15px;
                 }
             }
         }
