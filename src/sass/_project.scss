@@ -38,14 +38,17 @@
                 display: flex;
                 align-items: center;
                 .link {
-                        opacity: 60%;
-                        width: 40px;
-                        cursor: pointer;   
-                    }
+                    opacity: 60%;
+                    width: 25px;
+                    cursor: pointer;
+                    padding: 0 5px;
+                }         
                 span {
                     color: $opacity-color;
-                    font-size: 1.2rem;
-                    padding: 0 15px;
+                    font-size: 1.2rem;   
+                }
+                span:first-of-type {
+                    padding-right: 15px;
                 }
             }
         }

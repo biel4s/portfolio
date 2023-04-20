@@ -45,7 +45,8 @@ export default function App() {
                 preview="https://i.imgur.com/bccNO1C.jpeg"
                 github="https://github.com/biel4s/portfolio-react"
                 netlify=""
-                technology={`React${String.fromCharCode(160).repeat(8)}Sass`}
+                technology1="React"
+                technology2="Sass"
             />
             <Contact />
             <Footer />
