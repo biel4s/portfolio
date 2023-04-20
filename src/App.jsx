@@ -27,12 +27,14 @@ export default function App() {
             <Project
                 title="Calculator"
                 summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                preview=""
                 link="https://github.com/biel4s/weather-in-react"
                 technology={`React${String.fromCharCode(160).repeat(8)}Numbers API${String.fromCharCode(160).repeat(8)}Sass`}
             />
             <Project
                 title="Portfolio"
                 summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                preview=""
                 link="https://github.com/biel4s/portfolio-react"
                 technology={`React${String.fromCharCode(160).repeat(8)}Sass`}
             />
