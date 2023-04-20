@@ -14,12 +14,16 @@
         justify-content: space-evenly;
         .project-mockup {
             position: relative;
+            z-index: 1;
             .preview{
                 position: absolute;
                 top: 31px;
-                left: 100px;
-                width: 602px;
-                height: 376px;
+                left: 80px;
+                width: 640px;
+                //left:100px;
+                //width: 600px;
+                height: 377px;
+                z-index: -1;
             }
         }
         .project-description {
