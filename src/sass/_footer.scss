@@ -2,18 +2,15 @@
 
 .footer {
     //background-image: url(../images/noise.png);
-    background-color: $opacity-color;
+    background-color: #0097c199;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 80px;
     .icons {
-        width: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         .link {
             width: 30px;
+            margin: 0 5px;
         }
     }
 }
