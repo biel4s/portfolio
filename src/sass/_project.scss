@@ -35,7 +35,7 @@
                 .link {
                     cursor: pointer;
                     opacity: 60%;
-                    height: 20px;
+                    height: 25px;
                     padding: 0 5px;
                     transition: all 0.2s;
                     &:hover {
@@ -44,7 +44,9 @@
                 }         
                 span {
                     color: $opacity-color;
-                    font-size: 1.1rem;   
+                    font-size: 1.1rem;  
+                    display: flex; 
+                    align-items: center;
                 }
                 span:first-of-type {
                     padding-right: 15px;
