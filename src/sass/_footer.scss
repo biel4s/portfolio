@@ -3,7 +3,7 @@
 .footer {
     //background-image: url(../images/noise.png);
     background-color: #0097c199;
-    height: 150px;
+    height: 120px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,11 +11,11 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        
         height: 50%;    
-        h4 {
+        p {
             cursor: pointer;
-            padding: 0 20px;
+            margin: 0 20px;
+            font-size: 1rem;
         }
     }
     .footer-bottom{
@@ -25,6 +25,9 @@
         width: 70%;
         height: 50%;
         position: relative;
+        .footer-bottom-left {
+            font-size: 0.8rem;
+        }
         &:before {
             content: "";
             background: rgba(255, 255, 255, 0.5);
@@ -35,10 +38,14 @@
             top: -1%;
             transform: translateX(-50%);
         }
-        .footer-icons {
+        .footer-bottom-right {
             .link {
-                width: 30px;
+                width: 25px;
                 margin: 0 5px;
+                transition: all 0.2s;
+                &:hover{
+                    scale: 1.2;
+                }
             }
         }
     }

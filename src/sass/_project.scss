@@ -1,11 +1,9 @@
 @import "variables";
 
 .project {
-    background-image: url(../images/noise.png);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 65vh;
+    @include theme;
+    height: 60vh;
+    justify-content: center;
     .project-content {
         display: flex;
         width: 70%;
@@ -13,14 +11,12 @@
         justify-content: space-evenly;
         .project-mockup {
             position: relative;
-            z-index: 1;
             .preview{
                 position: absolute;
                 top: 28px;
                 left:88px;
                 width: 525px;
                 height: 330px;
-                z-index: -1;
             }
         }
         .project-description {
@@ -28,23 +24,27 @@
             padding-bottom: 75px;
             h2 {
                 color: $primary-color;
-                font-size: 2.5rem;
+                font-size: 2.1rem;
             }
             p {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             .description-bottom {
                 display: flex;
                 //align-items: center;
                 .link {
-                    opacity: 60%;
-                    height: 22px;
                     cursor: pointer;
+                    opacity: 60%;
+                    height: 20px;
                     padding: 0 5px;
+                    transition: all 0.2s;
+                    &:hover {
+                        scale: 1.2;
+                    }
                 }         
                 span {
                     color: $opacity-color;
-                    font-size: 1.2rem;   
+                    font-size: 1.1rem;   
                 }
                 span:first-of-type {
                     padding-right: 15px;

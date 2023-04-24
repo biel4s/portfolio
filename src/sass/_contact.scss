@@ -7,9 +7,7 @@
     flex-direction: column;
     height: 90vh;
     .contact-title {
-        color: $primary-color;
-        text-transform: uppercase;
-        font-size: 2.5rem;
+        @include title;
         &:after {
             @include header-underline;
         }
@@ -19,7 +17,7 @@
         font-size: 1.4rem;
         text-align: center;
     }
-    .contact-form {
+    #contact-form {
         display: flex;
         flex-direction: column;
         padding-top: 50px;

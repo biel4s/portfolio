@@ -5,12 +5,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     height: 80vh;
     .about-title {
-        color: $primary-color;
-        text-transform: uppercase;
-        font-size: 2.5rem;
+        @include title;
         &:after {
             @include header-underline;
         }

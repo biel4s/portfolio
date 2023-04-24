@@ -9,15 +9,15 @@ export default function Footer() {
     return (
         <div className="footer">
             <div className="footer-top">
-                <h4>ABOUT</h4>
-                <h4>PROJECTS</h4>
-                <h4>CONTACT</h4>
+                <p>ABOUT</p>
+                <p>PROJECTS</p>
+                <p>CONTACT</p>
             </div>
             <div className="footer-bottom">
-                <div className="footer-text">
+                <div className="footer-bottom-left">
                     <span>© Copyright {currentYear} - Kamil Bielawski</span>
                 </div>
-                <div className="footer-icons">
+                <div className="footer-bottom-right">
                     <a href="https://github.com/biel4s" target="_blank" rel="noreferrer">
                         <img src={github} alt="github" className="link" id="github"/>
                     </a>

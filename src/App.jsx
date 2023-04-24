@@ -44,7 +44,7 @@ export default function App() {
                 summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 preview="https://i.imgur.com/bccNO1C.jpeg"
                 github="https://github.com/biel4s/portfolio-react"
-                netlify=""
+                netlify="https://react-portfolio12.netlify.app"
                 technology1="React"
                 technology2="Sass"
             />

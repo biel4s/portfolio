@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 $primary-font: 'Lato', sans-serif;
-$light-weight: 300;
-$regular-weight: 400;
-$bold-weight: 700;
-$black-weight: 900;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900;
 
 $primary-color: #00C8FF;
 $opacity-color: #00c8ff99;
 $opacity2-color: #115d72cc;
 
+@mixin theme {
+    background-image: url(../images/noise.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin title {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
 @mixin header-underline {
     content: "";
     display: block;
