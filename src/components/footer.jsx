@@ -22,7 +22,6 @@ export default function Footer() {
                     <img src={facebook} alt="facebook" className="link" id="facebook"/>
                 </a>
             </div>
-            
         </div>
     )
 }
