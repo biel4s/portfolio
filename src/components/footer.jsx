@@ -15,10 +15,10 @@ export default function Footer() {
                 <a href="https://github.com/biel4s" target="_blank" rel="noreferrer">
                     <img src={github} alt="github" className="link" id="github"/>
                 </a>
-                <a href="https://www.linkedin.com/in/kamil-bielawski-062195213/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/kamil-bielawski" target="_blank" rel="noreferrer">
                     <img src={linkedin} alt="linkedin" className="link" id="linkedin"/>
                 </a>
-                <a href="https://www.facebook.com/biel4s/" target="_blank" rel="noreferrer">
+                <a href="https://www.facebook.com/biel4s" target="_blank" rel="noreferrer">
                     <img src={facebook} alt="facebook" className="link" id="facebook"/>
                 </a>
             </div>
