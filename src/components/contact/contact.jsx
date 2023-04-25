@@ -1,4 +1,4 @@
-import React, { useState, formRef } from "react";
+import React, { useState } from "react";
 import style from "./contact.module.scss";
 
 export default function Contact() {
@@ -42,7 +42,7 @@ export default function Contact() {
 				Please don't hesitate to reach out to me by filling out the form
 				below. I'll do my best to respond to you as soon as I can.
 			</p>
-			<form className={style.form} ref={formRef} autoComplete="off">
+			<form className={style.form} autoComplete="off">
 				<input
 					placeholder={namePlaceholder}
 					type="text"
