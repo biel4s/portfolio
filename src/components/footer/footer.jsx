@@ -18,12 +18,12 @@ export default function Footer() {
 				</ul>
 			</div>
 			<div className={style.bottom}>
-				<div className={style.bottom__left}>
+				<div className={style.bottomLeft}>
 					<p className={style.text}>
 						© Copyright {currentYear} - Kamil Bielawski
 					</p>
 				</div>
-				<div className={style.bottom__right}>
+				<div className={style.bottomRight}>
 					<a
 						href="https://github.com/biel4s"
 						target="_blank"

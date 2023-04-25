@@ -8,8 +8,8 @@ export default function Home(props) {
 		<div className={style.container}>
 			<div className={style.content}>
 				<p className={style.text}>Hello, my name is</p>
-				<h1 className={style.heading__primary}>Kamil Bielawski</h1>
-				<h3 className={style.heading__secondary}>
+				<h1 className={style.headingPrimary}>Kamil Bielawski</h1>
+				<h3 className={style.headingSecondary}>
 					Front-end developer
 				</h3>
 				<p className={style.description}>

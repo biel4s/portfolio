@@ -4,7 +4,7 @@ import style from "./about.module.scss";
 export default function About() {
 	return (
 		<div className={style.container}>
-			<h2 className={style.heading__primary}>About</h2>
+			<h2 className={style.headingPrimary}>About</h2>
 			<p className={style.text}>
 				Hi there! My name is{" "}
 				<span className={style.highlight}>Kamil Bielawski</span>, and

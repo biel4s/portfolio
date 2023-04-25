@@ -17,7 +17,7 @@ function ProjecLeft(props) {
 				/>
 			</div>
 			<div className={style.description} style={props.projectStyle}>
-				<h2 className={style.heading__primary}>{props.title}</h2>
+				<h2 className={style.headingPrimary}>{props.title}</h2>
 				<p className={style.paragraph}>{props.summary}</p>
 				<div
 					className={style.description__bottom}
@@ -67,7 +67,7 @@ function ProjectRight(props) {
 	return (
 		<div className={style.content}>
 			<div className={style.description} style={props.projectStyle}>
-				<h2 className={style.heading__primary}>{props.title}</h2>
+				<h2 className={style.headingPrimary}>{props.title}</h2>
 				<p className={style.paragraph}>{props.summary}</p>
 				<div
 					className={style.description__bottom}
@@ -123,12 +123,13 @@ function ProjectRight(props) {
 
 export default function Project(props) {
 	const projectStyle = {
-		textAlign: props.position === "left" ? "end" : "start",
-		justifyContent: props.position === "left" ? "flex-end" : "flex-start",
+		textAlign: props.mockupPosition === "left" ? "end" : "start",
+		justifyContent:
+			props.mockupPosition === "left" ? "flex-end" : "flex-start",
 	};
 
 	const content =
-		props.position === "left" ? (
+		props.mockupPosition === "left" ? (
 			<ProjecLeft {...props} projectStyle={projectStyle} /> // IF POSITION IS SOMETHING ELSE (RIGHT)
 		) : (
 			<ProjectRight {...props} projectStyle={projectStyle} />

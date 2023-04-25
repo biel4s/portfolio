@@ -7,7 +7,7 @@
 	flex-direction: column;
 	height: 80vh;
 }
-.heading__primary {
+.headingPrimary {
 	@include heading;
 	&:after {
 		@include heading__underline;

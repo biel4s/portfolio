@@ -13,7 +13,7 @@ export default function Header() {
 					height="40"
 					alt="logo"
 				/>
-				<h2 className={style.heading__primary}>
+				<h2 className={style.headingPrimary}>
 					KAMIL
 					<span className={style.highlight}>&nbsp;BIELAWSKI</span>
 				</h2>

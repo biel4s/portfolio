@@ -15,7 +15,7 @@ export default function App() {
 			<About />
 			<h2 className="project-title2">Projects</h2>
 			<Project
-				position="left"
+				mockupPosition="left"
 				title="Weather In"
 				summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 				preview="https://i.imgur.com/7AtLsD9.png"
@@ -26,7 +26,7 @@ export default function App() {
 				technology3="Sass"
 			/>
 			<Project
-				position="right"
+				mockupPosition="right"
 				title="Calculator"
 				summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 				preview="https://i.imgur.com/HfQdED6.png"
@@ -37,7 +37,7 @@ export default function App() {
 				technology3="Sass"
 			/>
 			<Project
-				position="left"
+				mockupPosition="left"
 				title="Portfolio"
 				summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 				preview="https://i.imgur.com/bccNO1C.jpeg"
