@@ -1,0 +1,22 @@
+@import "../../sass/variables";
+
+.container {
+	background-image: url(../../assets/images/noise.png);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 80vh;
+}
+.heading__primary {
+	@include heading;
+	&:after {
+		@include heading__underline;
+	}
+}
+.text {
+	max-width: 50vw;
+	font-size: 1.4rem;
+	.highlight {
+		color: $primary-color;
+	}
+}

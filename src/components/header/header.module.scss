@@ -1,0 +1,63 @@
+@import "../../sass/variables";
+
+.container {
+	background-image: url(../../assets/images/noise.png);
+	//backdrop-filter: blur(10px);
+	display: flex;
+	//position: fixed;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.5rem 0;
+}
+
+.left {
+	display: flex;
+	cursor: pointer;
+
+	.logo {
+		padding-right: 15px;
+	}
+
+	.heading__primary {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		font-weight: $font-regular;
+		font-size: 1.2rem;
+	}
+
+	.highlight {
+		color: $primary-color;
+	}
+}
+
+.right {
+	.list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		align-items: center;
+		.item {
+			cursor: pointer;
+			padding: 0.5rem 1rem;
+			margin-top: 15px;
+			font-size: 1.2rem;
+
+			&:after {
+				display: block;
+				content: "";
+				border-bottom: solid 3px $primary-color;
+				border-radius: 10px;
+				margin-top: 10px;
+				transform: scaleX(0);
+				transition: transform 0.2s ease-in-out;
+			}
+
+			&:hover:after {
+				transform: scaleX(1);
+			}
+		}
+	}
+}

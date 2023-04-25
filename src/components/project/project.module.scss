@@ -1,0 +1,63 @@
+@import "../../sass/variables";
+
+.container {
+	@include theme;
+	height: 60vh;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	width: 70%;
+	align-items: center;
+	justify-content: space-evenly;
+
+	.description {
+		max-width: 30vw;
+		padding-bottom: 75px;
+
+		.heading__primary {
+			color: $primary-color;
+			font-size: 2.1rem;
+		}
+
+		.paragraph {
+			font-size: 1.3rem;
+		}
+	}
+
+	.description__bottom {
+		display: flex;
+		.link {
+			cursor: pointer;
+			margin: 0 5px;
+			transition: all 0.2s;
+			color: rgba($primary-color, 0.6);
+			&:hover {
+				scale: 1.2;
+				color: $primary-color;
+			}
+		}
+
+		.technology {
+			color: rgba($primary-color, 0.5);
+			font-size: 1.1rem;
+			display: flex;
+			align-items: center;
+			&:first-of-type {
+				padding-right: 15px;
+			}
+		}
+	}
+}
+
+.mockup {
+	position: relative;
+	.preview {
+		position: absolute;
+		top: 28px;
+		left: 88px;
+		width: 525px;
+		height: 330px;
+	}
+}

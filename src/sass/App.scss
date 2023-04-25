@@ -1,21 +1,15 @@
 @import "variables";
-@import "header";
-@import "home";
-@import "about";
-@import "project";
-@import "contact";
-@import "footer";
 
 .App {
-    color: white;
-    background: linear-gradient(to right, #17181d, #2e3d5a);
-    .project-title {
-        background-image: url(../images/noise.png);
-        margin: 0;
-        text-align: center;
-        @include title;
-        &:after {
-            @include header-underline;
-        }
-    }
+	color: white;
+	background: linear-gradient(to right, #17181d, #2e3d5a);
+	.project-title2 {
+		background-image: url(../assets/images/noise.png);
+		margin: 0;
+		text-align: center;
+		@include heading;
+		&:after {
+			@include heading__underline;
+		}
+	}
 }
