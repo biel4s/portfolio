@@ -1,5 +1,5 @@
 # Portfolio - Kamil Bielawski
-![](https://i.imgur.com/d3wbXYO.jpeg)
+![](https://i.imgur.com/l7jUVZy.jpeg)
 
 # Getting Started with Create React App
 
