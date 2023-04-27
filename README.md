@@ -1,3 +1,6 @@
+# Portfolio - Kamil Bielawski
+![](https://i.imgur.com/d3wbXYO.jpeg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
