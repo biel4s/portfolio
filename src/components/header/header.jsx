@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo-white.png";
 import style from "./header.module.scss";
 
 export default function Header() {
+
 	return (
 		<header className={style.container}>
 			<div className={style.left}>

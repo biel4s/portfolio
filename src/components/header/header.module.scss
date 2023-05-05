@@ -44,8 +44,8 @@
 			padding: 0.5rem 1rem;
 			margin-top: 15px;
 			font-size: 1.2rem;
-
-			&:after {
+			position: relative;
+			&::after {
 				display: block;
 				content: "";
 				border-bottom: solid 3px $primary-color;
@@ -54,10 +54,11 @@
 				transform: scaleX(0);
 				transition: transform 0.2s ease-in-out;
 			}
-
-			&:hover:after {
+			&:hover::after {
 				transform: scaleX(1);
 			}
+
 		}
 	}
 }
+

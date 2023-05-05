@@ -17,7 +17,10 @@ export default function App() {
 			<Project
 				mockupPosition="left"
 				title="Weather In"
-				summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				summary="My first application using the React library. It uses the
+openweathermap API to display current weather information
+for a specified city. By creating this application, I wanted to
+practice fetching data from APIs and learn the basics of React."
 				preview="https://i.imgur.com/7AtLsD9.png"
 				github="https://github.com/biel4s/weather-in-react"
 				netlify="https://react-weather-in.netlify.app"
@@ -28,7 +31,11 @@ export default function App() {
 			<Project
 				mockupPosition="right"
 				title="Calculator"
-				summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				summary="A web application using the React library. Using the
+Numbersapi API, users can enter a number or perform
+arithmetic operations to get a result that displays a fun fact
+related to that number. I have also added a button that allows
+users to switch between light and dark mode."
 				preview="https://i.imgur.com/HfQdED6.png"
 				github="https://github.com/biel4s/calculator-react"
 				netlify="https://react-calculator25.netlify.app"
