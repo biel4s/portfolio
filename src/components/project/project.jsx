@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "@mdi/react";
 import { mdiGithub } from "@mdi/js";
-import { mdiLinkVariant } from "@mdi/js";
+import { mdiOpenInNew } from "@mdi/js";
 import mockup from "../../assets/images/mockup.png";
 import style from "./project.module.scss";
 
@@ -38,7 +38,7 @@ function ProjecLeft(props) {
 						>
 							<Icon
 								className={style.link}
-								path={mdiLinkVariant}
+								path={mdiOpenInNew}
 								size={1.2}
 							/>
 						</a>
@@ -102,7 +102,7 @@ function ProjectRight(props) {
 						>
 							<Icon
 								className={style.link}
-								path={mdiLinkVariant}
+								path={mdiOpenInNew}
 								size={1.2}
 							/>
 						</a>
