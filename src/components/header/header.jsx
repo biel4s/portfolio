@@ -4,6 +4,18 @@ import style from "./header.module.scss";
 
 export default function Header() {
 
+	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
+
+	const renderNavLink = (content) => {
+		return (
+			<ul className={style.list} key={content}>
+				<li className={style.item}>
+					<button className={style.button}>{content}</button>
+				</li>
+			</ul>
+		)
+	}
+
 	return (
 		<header className={style.container}>
 			<div className={style.left}>
@@ -19,13 +31,9 @@ export default function Header() {
 					<span className={style.highlight}>&nbsp;BIELAWSKI</span>
 				</h2>
 			</div>
-			<div className={style.right}>
-				<ul className={style.list}>
-					<li className={style.item}>ABOUT</li>
-					<li className={style.item}>PROJECTS</li>
-					<li className={style.item}>CONTACT</li>
-				</ul>
-			</div>
+			<nav className={style.right}>
+				{navLinks.map((nav) => renderNavLink(nav))}
+			</nav>
 		</header>
 	);
 }
