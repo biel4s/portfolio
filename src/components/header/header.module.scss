@@ -2,13 +2,28 @@
 
 .container {
 	background-image: url(../../assets/images/noise.png);
-	//backdrop-filter: blur(10px);
+	// background-color: rgba($primary-color, 0.25);
+	backdrop-filter: blur(7px);
 	display: flex;
-	//position: fixed;
-	width: 100%;
 	align-items: center;
 	justify-content: space-around;
-	padding: 1.5rem 0;
+	position: sticky;
+	width: 100%;
+	padding: 1rem 0;
+	z-index: 2;
+	transition-property: all;
+	transition-timing-function: ease;
+	transition-duration: 0.5s;
+	&.show {
+		top: 0;
+	}
+	&.hide {
+		top: -5rem;
+	}
+	&.active {
+		background-color: rgba($primary-color, 0.3);
+		transition-timing-function: ease-in-out;
+	}
 }
 
 .left {
@@ -25,6 +40,7 @@
 		align-items: center;
 		font-weight: $font-regular;
 		font-size: 1.2rem;
+		text-transform: uppercase;
 	}
 
 	.highlight {
@@ -59,10 +75,10 @@
 		left: 0;
 		bottom: -10px;
 		border-radius: 10px;
-		transform: scale(0,1);
-		transition: transform 0.2s ease-in-out;
+		transform: scale(0, 1);
+		transition: transform 0.2s ease;
 	}
 	&:hover::before {
-		transform: scale(1,1);
+		transform: scale(1, 1);
 	}
 }
