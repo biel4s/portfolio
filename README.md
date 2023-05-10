@@ -76,3 +76,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ```
   https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
+
+### TODOs:
+- Hide header on scroll down and show on scroll up
+- Smooth scrolling 
+- Intersection Observer
