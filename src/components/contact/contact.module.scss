@@ -1,10 +1,7 @@
 @import "../../sass/variables";
 
 .container {
-	background-image: url(../../assets/images/noise.png);
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+	@include theme;
 	height: 80vh;
 }
 .headingPrimary {

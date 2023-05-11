@@ -1,13 +1,11 @@
 @import "../../sass/variables";
 
 .container {
-	background-image: url(../../assets/images/noise.png);
-	// background-color: rgba($primary-color, 0.25);
-	backdrop-filter: blur(7px);
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	position: sticky;
+	position: fixed;
 	width: 100%;
 	padding: 1rem 0;
 	z-index: 2;
@@ -21,8 +19,9 @@
 		top: -5rem;
 	}
 	&.active {
-		background-color: rgba($primary-color, 0.3);
+		background-color: rgba($primary-color, 0.5);
 		transition-timing-function: ease-in-out;
+		backdrop-filter: blur(5px);
 	}
 }
 
@@ -32,6 +31,7 @@
 
 	.logo {
 		padding-right: 15px;
+		width: 40px;
 	}
 
 	.headingPrimary {
@@ -39,7 +39,7 @@
 		display: flex;
 		align-items: center;
 		font-weight: $font-regular;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		text-transform: uppercase;
 	}
 
@@ -62,7 +62,7 @@
 .button {
 	position: relative;
 	cursor: pointer;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #fff;
 	background: none;
 	border: none;

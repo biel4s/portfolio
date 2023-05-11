@@ -23,14 +23,6 @@ import style from "./header.module.scss";
 // 			lastScrollY = scrollY > 0 ? scrollY : 0;
 // 		};
 
-// 		window.addEventListener("scroll", updateScrollDirection);
-// 		return () => {
-// 			window.removeEventListener("scroll", updateScrollDirection);
-// 		}
-// 	}, [isHidden]);
-// 	return isHidden;
-// };
-
 function useScrollDirection() {
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
@@ -39,8 +31,10 @@ function useScrollDirection() {
 		const handleScroll = () => {
 			const scrollY = window.pageYOffset;
 			const direction = scrollY > lastScrollY ? "down" : "up";
-			if (direction !== isHidden && Math.abs(scrollY - lastScrollY) > 1) {
-				setIsHidden(direction === "down");
+			if (direction !== isHidden && scrollY > 100) {
+				if (Math.abs(scrollY - lastScrollY) > 1) {
+					setIsHidden(direction === "down");
+				}
 			}
 			setLastScrollY(scrollY);
 		};
@@ -70,7 +64,7 @@ export default function Header() {
 	// const isHidden = (useScrollDirection() === "down" ? "hide" : "show");
 
 	const changeBackground = () => {
-		if (window.scrollY >= 50) {
+		if (window.scrollY >= 150) {
 			setBackground(true);
 		} else {
 			setBackground(false);
@@ -85,15 +79,13 @@ export default function Header() {
 			className={`
 				${style.container} 
 				${style[isHidden]} 
-				${style[background ? "active" : ""]}
+				${style[background ? "active" : "inactive"]}
 			`}
 		>
 			<div className={style.left}>
 				<img
 					src={logo}
 					className={style.logo}
-					width="50"
-					height="40"
 					alt="logo"
 				/>
 				<h2 className={style.headingPrimary}>

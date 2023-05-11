@@ -1,13 +1,11 @@
 @import "../../sass/variables";
 
 .container {
-	background-image: url(../../assets/images/noise.png);
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+	@include theme;
 	justify-content: space-evenly;
 	font-size: calc(10px + 2vmin);
-	height: 90vh;
+	height: 100vh;
+	position: relative;
 }
 
 .content {
