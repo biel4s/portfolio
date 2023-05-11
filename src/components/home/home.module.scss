@@ -9,11 +9,11 @@
 }
 
 .content {
-	max-width: 470px;
 	text-align: center;
-
+	margin-top: 100px;
 	.text,
 	.description {
+		max-width: 450px;
 		font-size: 1.5rem;
 		margin: 0;
 	}
