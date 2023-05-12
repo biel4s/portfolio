@@ -122,6 +122,8 @@ function ProjectRight(props) {
 }
 
 export default function Project(props) {
+	const firstProject = props.firstProject === "yes" ? "inline" : "none";
+	
 	const projectStyle = {
 		textAlign: props.mockupPosition === "left" ? "end" : "start",
 		justifyContent:
@@ -135,5 +137,14 @@ export default function Project(props) {
 			<ProjectRight {...props} projectStyle={projectStyle} />
 		);
 
-	return <div className={style.container}>{content}</div>;
+	
+
+	return (
+		<div className={style.container}>
+			<h2 className={style.title} style={{ display: firstProject }}>
+				Projects
+			</h2>
+			{content}
+		</div>
+	);
 }

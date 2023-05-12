@@ -52,10 +52,16 @@ export default function Header() {
 	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
 	const renderNavLink = (content) => {
+		const scrollTo = `${content.toLowerCase()}`
+
+		const handleClickNav = () => {
+
+		}
+
 		return (
 			<ul className={style.list} key={content}>
 				<li className={style.item}>
-					<button className={style.button}>{content}</button>
+					<button className={style.button} onClick={handleClickNav}>{content}</button>
 				</li>
 			</ul>
 		);
@@ -83,11 +89,7 @@ export default function Header() {
 			`}
 		>
 			<div className={style.left}>
-				<img
-					src={logo}
-					className={style.logo}
-					alt="logo"
-				/>
+				<img src={logo} className={style.logo} alt="logo" />
 				<h2 className={style.headingPrimary}>
 					kamil
 					<span className={style.highlight}>&nbsp;bielawski</span>

@@ -16,7 +16,8 @@ $primary-color: #00c8ff;
 @mixin heading {
 	color: $primary-color;
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 2.25rem;
+	letter-spacing: 1px;
 }
 @mixin heading__underline {
 	content: "";

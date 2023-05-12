@@ -5,16 +5,17 @@ import About from "./components/about/about";
 import Project from "./components/project/project";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
-import "./sass/App.scss";
+import style from "./sass/app.module.scss";
+
 
 export default function App() {
 	return (
-		<div className="App">
+		<div className={style.container}>
 			<Header />
 			<Home />
 			<About />
-			<h2 className="project-title2">Projects</h2>
 			<Project
+				firstProject="yes"
 				mockupPosition="left"
 				title="Weather In"
 				summary="My first React application fetches current weather information for a specified city using the openweathermap API. By creating this application, I wanted to practice fetching data from APIs and learn the basics of React."

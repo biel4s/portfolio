@@ -2,8 +2,17 @@
 
 .container {
 	@include theme;
-	height: 60vh;
+	height: 65vh;
 	justify-content: center;
+	.title {
+		margin: 0;
+		padding-bottom: 100px;
+		text-align: center;
+		@include heading;
+		&:after {
+			@include heading__underline;
+		}
+	}
 }
 
 .content {
@@ -49,6 +58,8 @@
 		}
 	}
 }
+
+
 
 .mockup {
 	position: relative;

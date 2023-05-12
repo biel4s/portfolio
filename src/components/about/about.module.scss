@@ -2,7 +2,7 @@
 
 .container {
 	@include theme;
-	height: 80vh;
+	height: 65vh;
 }
 .headingPrimary {
 	@include heading;
@@ -11,8 +11,8 @@
 	}
 }
 .text {
-	max-width: 50vw;
-	font-size: 1.4rem;
+	max-width: clamp(50px, 60vw, 1000px);
+	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 	.highlight {
 		color: $primary-color;
 	}
