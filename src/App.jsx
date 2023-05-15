@@ -31,7 +31,6 @@ export default function App() {
 				title="Calculator"
 				summary="This web application uses the React library and the Numbersapi API. Users can enter a number or perform arithmetic operations to get a result that displays a fun fact related to that number. I have also added a button that allows users to switch between light and dark mode."
 				preview="https://i.imgur.com/HfQdED6.png"
-				github="https://github.com/biel4s/calculator-react"
 				netlify="https://react-calculator25.netlify.app"
 				technology1="React"
 				technology2="Numbers API"

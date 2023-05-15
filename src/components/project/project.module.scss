@@ -65,6 +65,7 @@
 	position: relative;
 	.preview {
 		position: absolute;
+		object-fit: cover;
 		top: 28px;
 		left: 88px;
 		width: 525px;
