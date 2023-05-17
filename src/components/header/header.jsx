@@ -52,16 +52,10 @@ export default function Header() {
 	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
 	const renderNavLink = (content) => {
-		const scrollTo = `${content.toLowerCase()}`
-
-		const handleClickNav = () => {
-
-		}
-
 		return (
 			<ul className={style.list} key={content}>
 				<li className={style.item}>
-					<button className={style.button} onClick={handleClickNav}>{content}</button>
+					<button className={style.button}>{content}</button>
 				</li>
 			</ul>
 		);
