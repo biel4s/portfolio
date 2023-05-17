@@ -17,10 +17,9 @@
 
 .content {
 	display: flex;
-	width: 100%;
+	width: 90%;
 	align-items: center;
-	justify-content: space-around;
-
+	justify-content: space-evenly;
 	.description {
 		max-width: 25vw;
 		padding-bottom: 75px;
