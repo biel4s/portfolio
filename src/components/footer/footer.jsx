@@ -12,6 +12,7 @@ export default function Footer() {
 		<footer className={style.container}>
 			<div className={style.top}>
 				<ul className={style.list}>
+					<li className={style.item}>HOME</li>
 					<li className={style.item}>ABOUT</li>
 					<li className={style.item}>PROJECTS</li>
 					<li className={style.item}>CONTACT</li>

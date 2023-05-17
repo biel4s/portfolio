@@ -38,7 +38,7 @@ export default function Contact() {
 	return (
 		<div className={style.container}>
 			<h2 className={style.headingPrimary}>Contact</h2>
-			<p className={style.text}>
+			<p className={style.paragraph}>
 				Please don't hesitate to reach out to me by filling out the form
 				below. I'll do my best to respond to you as soon as I can.
 			</p>

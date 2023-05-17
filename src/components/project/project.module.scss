@@ -17,9 +17,9 @@
 
 .content {
 	display: flex;
-	width: 90%;
+	width: 100%;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
 
 	.description {
 		max-width: 25vw;
@@ -65,10 +65,9 @@
 	position: relative;
 	.preview {
 		position: absolute;
-		object-fit: cover;
-		top: 28px;
-		left: 88px;
-		width: 525px;
+		top: 27px;
+		left: 87px;
+		width: 527px;
 		height: 330px;
 	}
 }
