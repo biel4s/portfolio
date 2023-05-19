@@ -52,7 +52,7 @@ export default function App() {
 				mockupPosition="right"
 				title="Portfolio"
 				summary="My React portfolio showcases my proficiency in developing web applications using the React library. The portfolio features a collection of projects, each demonstrating my skills in implementing various React concepts. I have used module.scss to manage the styles of the projects."
-				preview="https://i.imgur.com/bccNO1C.jpeg"
+				preview="https://i.imgur.com/7mdkJuZ.jpeg"
 				github="https://github.com/biel4s/portfolio-react"
 				netlify="https://react-portfolio12.netlify.app"
 				technology1="React"

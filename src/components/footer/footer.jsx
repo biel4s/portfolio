@@ -8,16 +8,23 @@ import style from "./footer.module.scss";
 export default function Footer() {
 	const currentYear = new Date().getFullYear();
 
+	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
+
+	const renderFooterLink = (content) => {
+		return (
+			<ul className={style.list} key={content}>
+				<li className={style.item}>
+					<button className={style.button}>{content}</button>
+				</li>
+			</ul>
+		);
+	};
+
 	return (
 		<footer className={style.container}>
-			<div className={style.top}>
-				<ul className={style.list}>
-					<li className={style.item}>HOME</li>
-					<li className={style.item}>ABOUT</li>
-					<li className={style.item}>PROJECTS</li>
-					<li className={style.item}>CONTACT</li>
-				</ul>
-			</div>
+			<nav className={style.top}>
+				{navLinks.map((nav) => renderFooterLink(nav))}
+			</nav>
 			<div className={style.bottom}>
 				<div className={style.bottomLeft}>
 					<p className={style.text}>

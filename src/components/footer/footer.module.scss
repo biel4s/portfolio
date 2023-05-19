@@ -11,22 +11,26 @@
 .top {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 	height: 50%;
 	.list {
-		display: flex;
-		margin: 0;
 		padding: 0;
 		list-style: none;
-		align-items: center;
 		.item {
-			cursor: pointer;
 			margin: 0 20px;
-			font-size: 1rem;
+		}
+	}
+	.button {
+	cursor: pointer;
+	font-size: 1rem;
+	color: #fff;
+	background: none;
+	border: none;
+		&:hover {
+			color:$primary-color;
+			transition: all 0.25s ease-in-out;
 		}
 	}
 }
-
 .bottom {
 	display: flex;
 	align-items: center;
