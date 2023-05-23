@@ -3,9 +3,10 @@
 
 ### Figma: 
 ```
-  https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
+https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
 
 ### TODOs:
 - Smooth scrolling 
 - Intersection Observer
+- Change headings
