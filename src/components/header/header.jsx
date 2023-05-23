@@ -37,11 +37,14 @@ function useScrollDirection() {
 				}
 			}
 			setLastScrollY(scrollY);
+			console.log(scrollY);
 		};
 
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [lastScrollY, isHidden]);
+
+	
 
 	return isHidden ? "hide" : "show";
 }
@@ -52,10 +55,20 @@ export default function Header() {
 	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
 	const renderNavLink = (content) => {
+		const scrollToId = `${content.toLowerCase()}_container`;
+
+		const handleClickNav = () => {
+			document
+				.getElementById(scrollToId)
+				.scrollIntoView({ behavior: "smooth" });
+		};
+
 		return (
 			<ul className={style.list} key={content}>
 				<li className={style.item}>
-					<button className={style.button}>{content}</button>
+					<button onClick={handleClickNav} className={style.button}>
+						{content}
+					</button>
 				</li>
 			</ul>
 		);

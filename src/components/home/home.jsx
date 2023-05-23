@@ -5,7 +5,7 @@ import style from "./home.module.scss";
 
 export default function Home(props) {
 	return (
-		<div className={style.container}>
+		<div className={style.container} id="home_container">
 			<div className={style.content}>
 				<p className={style.text}>Hello, my name is</p>
 				<h1 className={style.headingPrimary}>Kamil Bielawski</h1>

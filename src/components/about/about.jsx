@@ -4,7 +4,7 @@ import myself from "../../assets/images/myself2.png";
 
 export default function About() {
 	return (
-		<div className={style.container}>
+		<div className={style.container} id="about_container">
 			<h2 className={style.headingPrimary}>About</h2>
 			<div className={style.content}>
 				<div className={style.description}>

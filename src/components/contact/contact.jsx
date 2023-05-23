@@ -36,7 +36,7 @@ export default function Contact() {
 	};
 
 	return (
-		<div className={style.container}>
+		<div className={style.container} id="contact_container">
 			<h2 className={style.headingPrimary}>Contact</h2>
 			<p className={style.paragraph}>
 				Please don't hesitate to reach out to me by filling out the form

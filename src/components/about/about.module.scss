@@ -2,11 +2,13 @@
 
 .container {
 	@include theme;
+	justify-content: space-between;
 	height: 70vh;
 }
 
 .headingPrimary {
 	@include heading;
+	padding-top: 50px;
 	&:after {
 		@include heading__underline;
 	}
@@ -35,5 +37,4 @@
 	scale: 1.75;
 	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%2300C8FFFF' stroke-width='4' stroke-dasharray='9' stroke-dashoffset='37' stroke-linecap='round'/%3e%3c/svg%3e");
 	border-radius: 100px;
-	
 }
