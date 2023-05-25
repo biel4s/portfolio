@@ -36,6 +36,7 @@ export default function About() {
 					</p>
 				</div>
 				<img src={myself} className={style.myself} alt="myself" />
+				{/* new outter div for background image */}
 			</div>
 		</div>
 	);
