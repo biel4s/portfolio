@@ -35,8 +35,10 @@ export default function About() {
 						touch, please don't hesitate to reach out!
 					</p>
 				</div>
-				<img src={myself} className={style.myself} alt="myself" />
-				{/* new outter div for background image */}
+
+				<div className={style.circle}>
+					<img src={myself} className={style.myself} alt="myself" />
+				</div>
 			</div>
 		</div>
 	);
