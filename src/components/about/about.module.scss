@@ -3,12 +3,11 @@
 .container {
 	@include theme;
 	justify-content: space-between;
-	height: 70vh;
+	padding: 100px 0;
 }
 
 .headingPrimary {
 	@include heading;
-	padding-top: 50px;
 	&:after {
 		@include heading__underline;
 	}

@@ -1,19 +1,14 @@
 @import "../../sass/variables";
 
 .container {
-	@include theme;
+	display: flex;
+	justify-content: center;	
+	width: 100%;
 	.title {
 		@include heading;
-		padding-top: 50px;
 		&:after {
 			@include heading__underline;
 		}
-	}
-	.wrapper {
-		display: flex;
-		justify-content: center;	
-		height: 60vh;
-		width: 100%;
 	}
 }
 
@@ -21,6 +16,7 @@
 .content {
 	display: flex;
 	align-items: center;
+	padding-bottom: 150px;
 	.description {
 		padding-bottom: 50px;
 		max-width: 450px;

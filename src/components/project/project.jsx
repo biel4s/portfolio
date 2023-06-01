@@ -122,8 +122,6 @@ function ProjectRight(props) {
 }
 
 export default function Project(props) {
-	const firstProject = props.firstProject === "yes" ? "block" : "none";
-
 	const projectStyle = {
 		textAlign: props.mockupPosition === "left" ? "end" : "start",
 		justifyContent:
@@ -138,11 +136,8 @@ export default function Project(props) {
 		);
 
 	return (
-		<div className={style.container} id="projects_container">
-			<h2 className={style.title} style={{ display: firstProject }}>
-				Projects
-			</h2>
-			<div className={style.wrapper}>{content}</div>
+		<div className={style.container}>
+			{content}
 		</div>
 	);
 }
