@@ -37,41 +37,46 @@ export default function Contact() {
 
 	return (
 		<div className={style.container} id="contact_container">
-			<h2 className={style.headingPrimary}>Contact</h2>
-			<p className={style.paragraph}>
-				Please don't hesitate to reach out to me by filling out the form
-				below. I'll do my best to respond to you as soon as I can.
-			</p>
-			<form className={style.form} autoComplete="off">
-				<input
-					placeholder={namePlaceholder}
-					type="text"
-					name="name"
-					className={style.input}
-					onFocus={handleNameFocus}
-					onBlur={handleNameBlur}
-					required
-				></input>
-				<input
-					placeholder={emailPlaceholder}
-					type="text"
-					name="email"
-					className={style.input}
-					onFocus={handleEmailFocus}
-					onBlur={handleEmailBlur}
-					required
-				></input>
-				<textarea
-					placeholder={messagePlaceholder}
-					type="text"
-					name="message"
-					className={style.input}
-					onFocus={handleMessageFocus}
-					onBlur={handleMessageBlur}
-					required
-				></textarea>
-			</form>
-			<button className={style.btn}>Submit</button>
+			<div className={style.content}>
+				<h2 className={style.headingPrimary}>Contact</h2>
+				<div className={style.test}>
+					<p className={style.paragraph}>
+						Please don't hesitate to reach out to me by filling out
+						the form below. I'll do my best to respond to you as
+						soon as I can.
+					</p>
+					<form className={style.form} autoComplete="off">
+						<input
+							placeholder={namePlaceholder}
+							type="text"
+							name="name"
+							className={style.input}
+							onFocus={handleNameFocus}
+							onBlur={handleNameBlur}
+							required
+						></input>
+						<input
+							placeholder={emailPlaceholder}
+							type="text"
+							name="email"
+							className={style.input}
+							onFocus={handleEmailFocus}
+							onBlur={handleEmailBlur}
+							required
+						></input>
+						<textarea
+							placeholder={messagePlaceholder}
+							type="text"
+							name="message"
+							className={style.input}
+							onFocus={handleMessageFocus}
+							onBlur={handleMessageBlur}
+							required
+						></textarea>
+					</form>
+					<button className={style.btn}>Submit</button>
+				</div>
+			</div>
 		</div>
 	);
 }

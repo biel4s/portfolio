@@ -22,49 +22,51 @@ export default function Footer() {
 
 	return (
 		<footer className={style.container}>
-			<nav className={style.top}>
-				{navLinks.map((nav) => renderFooterLink(nav))}
-			</nav>
-			<div className={style.bottom}>
-				<div className={style.bottomLeft}>
-					<p className={style.text}>
-						© Copyright {currentYear} - Kamil Bielawski
-					</p>
-				</div>
-				<div className={style.bottomRight}>
-					<a
-						href="https://github.com/biel4s"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<Icon
-							path={mdiGithub}
-							size={1.3}
-							className={style.link}
-						/>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/kamil-bielawski"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<Icon
-							path={mdiLinkedin}
-							size={1.3}
-							className={style.link}
-						/>
-					</a>
-					<a
-						href="https://www.facebook.com/biel4s"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<Icon
-							path={mdiFacebook}
-							size={1.3}
-							className={style.link}
-						/>
-					</a>
+			<div className={style.content}>
+				<nav className={style.top}>
+					{navLinks.map((nav) => renderFooterLink(nav))}
+				</nav>
+				<div className={style.bottom}>
+					<div className={style.bottomLeft}>
+						<p className={style.text}>
+							© Copyright {currentYear} - Kamil Bielawski
+						</p>
+					</div>
+					<div className={style.bottomRight}>
+						<a
+							href="https://github.com/biel4s"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Icon
+								path={mdiGithub}
+								size={1.3}
+								className={style.link}
+							/>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/kamil-bielawski"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Icon
+								path={mdiLinkedin}
+								size={1.3}
+								className={style.link}
+							/>
+						</a>
+						<a
+							href="https://www.facebook.com/biel4s"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Icon
+								path={mdiFacebook}
+								size={1.3}
+								className={style.link}
+							/>
+						</a>
+					</div>
 				</div>
 			</div>
 		</footer>

@@ -3,16 +3,21 @@
 .container {
 	color: white;
 	background: linear-gradient(to right, #17181d, #2e3d5a);
-	
 }
 
 .projects {
 	padding-top: 100px;
 	@include theme;
 }
-.headingPrimary {
-	@include heading;
-	&:after {
-		@include heading__underline;
+.firstProject {
+	.headingPrimary {
+		@include heading;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		&:before {
+			@include heading__line;
+			margin-right: 50px;
+		}
 	}
 }

@@ -3,14 +3,19 @@
 .container {
 	//background-image: url(../assets/images/noise.png);
 	background-color: #003b4b;
-	height: 120px;
+	
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	.content{
+		width: 70vw;
+		height: 120px;
+	}
 }
 .top {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 50%;
 	.list {
 		padding: 0;
@@ -35,7 +40,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 70%;
 	height: 50%;
 	position: relative;
 }

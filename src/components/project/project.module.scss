@@ -1,26 +1,19 @@
 @import "../../sass/variables";
 
 .container {
-	display: flex;
-	justify-content: center;	
-	width: 100%;
-	.title {
-		@include heading;
-		&:after {
-			@include heading__underline;
-		}
-	}
+	width: 70vw;
 }
 
 
 .content {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding-bottom: 150px;
 	.description {
 		padding-bottom: 50px;
 		max-width: 450px;
-		.headingPrimary {
+		.title {
 			color: $primary-color;
 			font-size: 2.1rem;
 		}
@@ -59,6 +52,10 @@
 
 .mockup {
 	position: relative;
+	scale: width(200px, 35vw, 800px);
+	.laptop{
+		max-width: 700px;
+	}
 	.preview {
 		position: absolute;
 		top: 27px;

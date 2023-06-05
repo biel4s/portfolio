@@ -4,28 +4,33 @@
 	@include theme;
 	justify-content: space-between;
 	padding: 100px 0;
+	.content {
+		width: 70vw;
+	}
 }
 
 .headingPrimary {
 	@include heading;
+	width: 100%;
+	display: flex;
+	align-items: center;
 	&:after {
-		@include heading__underline;
+		@include heading__line;
+		margin-left: 50px;
 	}
 }
 
-.content {
+.description {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	width: 70vw;
-}
-
-.description {
-	.paragraph {
-		max-width: clamp(50px, 35vw, 1000px);
-		font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
-		.highlight {
-			color: $primary-color;
+	justify-content: space-between;
+	.text {
+		.paragraph {
+			max-width: clamp(50px, 35vw, 1000px);
+			font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+			.highlight {
+				color: $primary-color;
+			}
 		}
 	}
 }

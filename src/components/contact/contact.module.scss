@@ -6,14 +6,26 @@
 }
 .headingPrimary {
 	@include heading;
+	width: 100%;
+	display: flex;
+	align-items: center;
 	&:after {
-		@include heading__underline;
+		@include heading__line;
+		margin-left: 50px;
 	}
 }
-.paragraph {
-	max-width: clamp(100px, 30vw, 1000px);
-	font-size: 1.2rem;
-	text-align: center;
+.content{
+	width: 70vw;
+	.test{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.paragraph {
+		max-width: clamp(100px, 30vw, 1000px);
+		font-size: 1.2rem;
+		text-align: center;
+	}
 }
 
 .form {
@@ -28,7 +40,8 @@
 		border: none;
 		margin: 5px 0px;
 		padding: 10px;
-		min-width: 400px;
+		min-width: 30vw;
+		max-width: 70vw;
 		color: white;
 		&::placeholder {
 			color: white;
@@ -38,13 +51,13 @@
 		}
 	}
 	textarea {
-		min-height: 150px;
-		max-height: 250px;
 		font-size: 1.5rem;
-		max-width: 1200px;
+		min-height: 150px;
+		max-height: 300px;
 	}
 }
 
 .btn {
 	@include button;
+	margin: 50px 0 auto;
 }

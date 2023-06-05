@@ -9,7 +9,7 @@ function ProjecLeft(props) {
 	return (
 		<div className={style.content}>
 			<div className={style.mockup}>
-				<img src={mockup} alt="laptop" width="700" />
+				<img src={mockup} className={style.laptop} alt="laptop"/>
 				<img
 					src={props.preview}
 					alt="preview"
@@ -17,7 +17,7 @@ function ProjecLeft(props) {
 				/>
 			</div>
 			<div className={style.description} style={props.projectStyle}>
-				<h2 className={style.headingPrimary}>{props.title}</h2>
+				<h2 className={style.title}>{props.title}</h2>
 				<p className={style.paragraph}>{props.summary}</p>
 				<div
 					className={style.description__bottom}
@@ -67,7 +67,7 @@ function ProjectRight(props) {
 	return (
 		<div className={style.content}>
 			<div className={style.description} style={props.projectStyle}>
-				<h2 className={style.headingPrimary}>{props.title}</h2>
+				<h2 className={style.title}>{props.title}</h2>
 				<p className={style.paragraph}>{props.summary}</p>
 				<div
 					className={style.description__bottom}
@@ -110,7 +110,7 @@ function ProjectRight(props) {
 				</div>
 			</div>
 			<div className={style.mockup}>
-				<img src={mockup} alt="mockup" width="700" />
+				<img src={mockup} className={style.laptop} alt="mockup" />
 				<img
 					src={props.preview}
 					alt="preview"
