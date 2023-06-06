@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 $primary-font: "Lato", sans-serif;
+$secondary-font: 'Train One', cursive;
 $font-light: 300;
 $font-regular: 400;
 $font-bold: 700;
@@ -14,9 +16,10 @@ $primary-color: #00c8ff;
 	flex-direction: column;
 }
 @mixin heading {
+	font-family: $secondary-font;
 	color: $primary-color;
 	text-transform: uppercase;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	letter-spacing: 1px;
 }
 @mixin heading__line {

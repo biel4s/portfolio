@@ -6,7 +6,7 @@
 }
 
 .projects {
-	padding-top: 100px;
+	padding-top: 50px;
 	@include theme;
 }
 .firstProject {
@@ -17,7 +17,7 @@
 		width: 100%;
 		&:before {
 			@include heading__line;
-			margin-right: 50px;
+			margin-right: 100px;
 		}
 	}
 }
