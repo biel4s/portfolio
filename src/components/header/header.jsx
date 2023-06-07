@@ -2,27 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/logo-white.png";
 import style from "./header.module.scss";
 
-// function useScrollDirection() {
-// 	const [isHidden, setIsHidden] = useState(null);
-
-// 	useEffect(() => {
-// 		let lastScrollY = window.pageYOffset;
-
-// 		const updateScrollDirection = () => {
-// 			const scrollY = window.pageYOffset;
-// 			const direction = scrollY > lastScrollY ? "down" : "up";
-
-// 			if (
-// 				direction !== isHidden &&
-// 				Math.abs(
-// 					scrollY - lastScrollY > 1 || scrollY - lastScrollY < -1
-// 				)
-// 			) {
-// 				setIsHidden(direction);
-// 			}
-// 			lastScrollY = scrollY > 0 ? scrollY : 0;
-// 		};
-
+//SCROLL FUNCTION
 function useScrollDirection() {
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
@@ -44,16 +24,24 @@ function useScrollDirection() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [lastScrollY, isHidden]);
 
-	
-
 	return isHidden ? "hide" : "show";
 }
 
 export default function Header() {
+	//BACKGROUND
 	const [background, setBackground] = useState(false);
+	const changeBackground = () => {
+		if (window.scrollY >= 150) {
+			setBackground(true);
+		} else {
+			setBackground(false);
+		}
+	};
+	window.addEventListener("scroll", changeBackground);
+	const isHidden = useScrollDirection();
 
+	//NAV LINKS
 	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
-
 	const renderNavLink = (content) => {
 		const scrollToId = `${content.toLowerCase()}_container`;
 
@@ -74,18 +62,12 @@ export default function Header() {
 		);
 	};
 
-	// const isHidden = (useScrollDirection() === "down" ? "hide" : "show");
-
-	const changeBackground = () => {
-		if (window.scrollY >= 150) {
-			setBackground(true);
-		} else {
-			setBackground(false);
-		}
+	const scrollToHome = "home_container";
+	const handleClick = () => {
+		document
+			.getElementById(scrollToHome)
+			.scrollIntoView({ behavior: "smooth" });
 	};
-	window.addEventListener("scroll", changeBackground);
-
-	const isHidden = useScrollDirection();
 
 	return (
 		<header
@@ -95,7 +77,7 @@ export default function Header() {
 				${style[background ? "active" : "inactive"]}
 			`}
 		>
-			<div className={style.left}>
+			<div className={style.left} onClick={handleClick}>
 				<img src={logo} className={style.logo} alt="logo" />
 				<h2 className={style.headingPrimary}>
 					kamil
