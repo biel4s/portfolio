@@ -11,10 +11,19 @@ export default function Footer() {
 	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
 	const renderFooterLink = (content) => {
+		const scrollToId = `${content.toLowerCase()}_container`;
+
+		const handleClick = () => {
+			document
+				.getElementById(scrollToId)
+				.scrollIntoView({ behavior: "smooth" });
+		};
 		return (
 			<ul className={style.list} key={content}>
 				<li className={style.item}>
-					<button className={style.button}>{content}</button>
+					<button onClick={handleClick} className={style.button}>
+						{content}
+					</button>
 				</li>
 			</ul>
 		);
