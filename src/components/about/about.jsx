@@ -1,12 +1,57 @@
-import React from "react";
+import React, { useRef, useEffect, useState, useMemo } from "react";
 import style from "./about.module.scss";
 import myself from "../../assets/images/myself2.png";
 
 export default function About() {
+	// const myRef = useRef(null);
+	// const [isVisible, setIsVisible] = useState(false);
+	// console.log('isVisible', isVisible)
+
+	// useEffect(() => {
+	// 	const observer = new IntersectionObserver((entries) => {
+	// 		const entry = entries[0];
+	// 		setIsVisible(entry.isIntersecting);
+	// 	},
+	// 		{ rootMargin: "-100px" }
+	// 	);
+	// 	observer.observe(myRef.current);
+	// }, [])
+
+	const myRef = useRef(null);
+	const [isVisible, setIsVisible] = useState(false);
+
+	const callbackFunction = (entries) => {
+		const entry = entries[0];
+		setIsVisible(entry.isIntersecting);
+	};
+	const options = useMemo(() => {
+		return {
+			root: null,
+			rootMargin: "-100px",
+			// threshold: 0.3
+		};
+	}, []);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(callbackFunction, options);
+		const currentRef = myRef.current;
+		if (currentRef) observer.observe(currentRef);
+
+		return () => {
+			if (currentRef) observer.unobserve(currentRef);
+		};
+	}, [myRef, options]);
+
 	return (
 		<div className={style.container} id="about_container">
-			<div className={style.content}>
-				<h2 className={style.headingPrimary}>About</h2>
+			<div className={style.content} ref={myRef}>
+				<h2
+					className={`${style.headingPrimary} ${
+						isVisible ? "show" : "hidden"
+					}`}
+				>
+					About
+				</h2>
 				<div className={style.description}>
 					<div className={style.text}>
 						<p className={style.paragraph}>

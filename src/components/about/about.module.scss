@@ -14,6 +14,18 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
+	&.hidden {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translateX(-500px);
+		transition: all 1s ease-in-out;
+	}
+	&.show {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0px);
+		transition: all 1s ease-in-out;
+	}
 	&:after {
 		@include heading__line;
 		margin-left: 100px;

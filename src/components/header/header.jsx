@@ -17,7 +17,7 @@ function useScrollDirection() {
 				}
 			}
 			setLastScrollY(scrollY);
-			console.log(scrollY);
+			//console.log(scrollY);
 		};
 
 		window.addEventListener("scroll", handleScroll);
