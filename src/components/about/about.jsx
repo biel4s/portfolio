@@ -17,38 +17,40 @@ export default function About() {
 	// 	observer.observe(myRef.current);
 	// }, [])
 
-	const myRef = useRef(null);
+	const targetRef = useRef(null);
 	const [isVisible, setIsVisible] = useState(false);
+	console.log("isVisible", isVisible);
 
-	const callbackFunction = (entries) => {
+	const callbackFunction = (entries, observer) => {
 		const entry = entries[0];
 		setIsVisible(entry.isIntersecting);
+		if (entry.isIntersecting) observer.unobserve(entry.target);
 	};
+
 	const options = useMemo(() => {
 		return {
-			root: null,
-			rootMargin: "-100px",
-			// threshold: 0.3
+			//rootMargin: "-100px"
+			threshold: 0.4,
 		};
 	}, []);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(callbackFunction, options);
-		const currentRef = myRef.current;
-		if (currentRef) observer.observe(currentRef);
-
+		const currentTarget = targetRef.current;
+		if (currentTarget) observer.observe(currentTarget);
 		return () => {
-			if (currentRef) observer.unobserve(currentRef);
+			if (currentTarget) observer.unobserve(currentTarget);
 		};
-	}, [myRef, options]);
+	}, [targetRef, options]);
 
 	return (
 		<div className={style.container} id="about_container">
-			<div className={style.content} ref={myRef}>
+			<div className={style.content}>
 				<h2
 					className={`${style.headingPrimary} ${
-						isVisible ? "show" : "hidden"
+						style[isVisible ? "show" : "hidden"]
 					}`}
+					ref={targetRef}
 				>
 					About
 				</h2>
