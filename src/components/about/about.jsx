@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useState, useMemo } from "react";
+import React, { useRef } from "react";
+import useElementOnScroll from "../../hooks/useElementOnScroll";
 import style from "./about.module.scss";
 import myself from "../../assets/images/myself2.png";
 
@@ -17,45 +18,30 @@ export default function About() {
 	// 	observer.observe(myRef.current);
 	// }, [])
 
-	const targetRef = useRef(null);
-	const [isVisible, setIsVisible] = useState(false);
-	console.log("isVisible", isVisible);
+	const targetRef1 = useRef(null);
+	const targetRef2 = useRef(null);
 
-	const callbackFunction = (entries, observer) => {
-		const entry = entries[0];
-		setIsVisible(entry.isIntersecting);
-		if (entry.isIntersecting) observer.unobserve(entry.target);
-	};
-
-	const options = useMemo(() => {
-		return {
-			//rootMargin: "-100px"
-			threshold: 0.4,
-		};
-	}, []);
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(callbackFunction, options);
-		const currentTarget = targetRef.current;
-		if (currentTarget) observer.observe(currentTarget);
-		return () => {
-			if (currentTarget) observer.unobserve(currentTarget);
-		};
-	}, [targetRef, options]);
+	const isVisible1 = useElementOnScroll({ threshhold: 0.3 }, targetRef1);
+	const isVisible2 = useElementOnScroll({ threshhold: 0.3 }, targetRef2);
 
 	return (
 		<div className={style.container} id="about_container">
 			<div className={style.content}>
 				<h2
 					className={`${style.headingPrimary} ${
-						style[isVisible ? "show" : "hidden"]
+						style[isVisible1 ? "show" : "hidden"]
 					}`}
-					ref={targetRef}
+					ref={targetRef1}
 				>
 					About
 				</h2>
 				<div className={style.description}>
-					<div className={style.text}>
+					<div
+						className={`${style.text} ${
+							style[isVisible2 ? "show" : "hidden"]
+						}`}
+						ref={targetRef2}
+					>
 						<p className={style.paragraph}>
 							Hi there! My name is{" "}
 							<span className={style.highlight}>

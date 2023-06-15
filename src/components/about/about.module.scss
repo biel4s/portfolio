@@ -36,6 +36,16 @@
 	align-items: center;
 	justify-content: space-between;
 	.text {
+		&.hidden {
+			opacity: 0;
+			filter: blur(10px);
+			transform: translateX(-100%);
+		}
+		&.show {
+			opacity: 1;
+			filter: blur(0);
+			transform: translateX(0px);
+		}
 		.paragraph {
 			max-width: clamp(50px, 35vw, 1000px);
 			font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
