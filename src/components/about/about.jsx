@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import useElementOnScroll from "../../hooks/useElementOnScroll";
+import useIntersection from "../../hooks/useIntersection";
 import style from "./about.module.scss";
 import myself from "../../assets/images/myself2.png";
 
@@ -18,31 +18,33 @@ export default function About() {
 	// 	observer.observe(myRef.current);
 	// }, [])
 
-	const targetRef1 = useRef(null);
-	const targetRef2 = useRef(null);
-
-	const isVisible1 = useElementOnScroll({ threshhold: 0.3 }, targetRef1);
-	const isVisible2 = useElementOnScroll({ threshhold: 0.3 }, targetRef2);
+	const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+	const options = { rootMargin: "-100px" };
+	const isIntersecting = useIntersection(refs, options);
 
 	return (
 		<div className={style.container} id="about_container">
 			<div className={style.content}>
-				<h2
+				<h1
 					className={`${style.headingPrimary} ${
-						style[isVisible1 ? "show" : "hidden"]
+						isIntersecting.includes(refs[0].current)
+							? style.show
+							: style.hidden
 					}`}
-					ref={targetRef1}
+					ref={refs[0]}
 				>
 					About
-				</h2>
+				</h1>
 				<div className={style.description}>
-					<div
-						className={`${style.text} ${
-							style[isVisible2 ? "show" : "hidden"]
-						}`}
-						ref={targetRef2}
-					>
-						<p className={style.paragraph}>
+					<div className={style.text}>
+						<p
+							className={`${style.paragraph} ${
+								isIntersecting.includes(refs[1].current)
+									? style.show
+									: style.hidden
+							}`}
+							ref={refs[1]}
+						>
 							Hi there! My name is{" "}
 							<span className={style.highlight}>
 								Kamil Bielawski
@@ -55,7 +57,14 @@ export default function About() {
 							interfaces and makes it easy to reuse code across
 							different parts of a website.
 						</p>
-						<p className={style.paragraph}>
+						<p
+							className={`${style.paragraph} ${
+								isIntersecting.includes(refs[2].current)
+									? style.show
+									: style.hidden
+							}`}
+							ref={refs[2]}
+						>
 							As a front-end developer, I'm passionate about
 							creating beautiful, responsive websites that provide
 							a great user experience. During my studies, I've had
@@ -64,15 +73,29 @@ export default function About() {
 							learned how to code using HTML, CSS, and JavaScript,
 							and I'm constantly looking for new ways to improve
 							my skills and stay up-to-date with the latest
-							industry trends.{" "}
+							industry trends.
 						</p>
-						<p className={style.paragraph}>
+						<p
+							className={`${style.paragraph} ${
+								isIntersecting.includes(refs[3].current)
+									? style.show
+									: style.hidden
+							}`}
+							ref={refs[3]}
+						>
 							I'm excited to continue growing as a developer and
 							to share my skills with the world. If you'd like to
 							get in touch, please don't hesitate to reach out!
 						</p>
 					</div>
-					<div className={style.circle}>
+					<div
+						className={`${style.circle} ${
+							isIntersecting.includes(refs[4].current)
+								? style.show
+								: style.hidden
+						}`}
+						ref={refs[4]}
+					>
 						<img
 							src={myself}
 							className={style.myself}

@@ -36,21 +36,23 @@
 	align-items: center;
 	justify-content: space-between;
 	.text {
-		&.hidden {
-			opacity: 0;
-			filter: blur(10px);
-			transform: translateX(-100%);
-		}
-		&.show {
-			opacity: 1;
-			filter: blur(0);
-			transform: translateX(0px);
-		}
+		text-align: justify;
 		.paragraph {
 			max-width: clamp(50px, 35vw, 1000px);
 			font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+			transition: all 0.5s ease-in-out;
 			.highlight {
 				color: $primary-color;
+			}
+			&.hidden {
+				opacity: 0;
+				filter: blur(10px);
+				transform: translateX(-100%);
+			}
+			&.show {
+				opacity: 1;
+				filter: blur(0);
+				transform: translateX(0px);
 			}
 		}
 	}
@@ -62,14 +64,25 @@
 	border: $primary-color dashed 3px;
 	border-radius: 50%;
 	overflow: hidden;
+	transition: all 0.5s ease-in-out;
 	//animation: spin 10s linear infinite;
+	&.hidden {
+		opacity: 0;
+		filter: blur(10px);
+		transform: translateX(200px);
+	}
+	&.show {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0px);
+	}
 	.myself {
-		position: relative;
+		//position: relative;
 		top: 5px;
 	}
 	// @keyframes spin {
 	// 	100% {
 	// 		transform: rotate(360deg);
 	// 	}
-	// }
+	// 	}
 }
