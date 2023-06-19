@@ -7,13 +7,14 @@ const useIntersection = (refs, options) => {
 	useEffect(() => {
 		const observers = refs.map((ref) => {
 			return new IntersectionObserver(([entry]) => {
-				if (entry.isIntersecting) {
+				if (entry.isIntersecting && !ref.current.visible) {
+					ref.current.visible = true;
 					setIntersecting((prevElements) => [
 						...prevElements,
 						ref.current,
 					]);
-					//observers.unobserve(entry.target);
-				} else {
+				} else if (!entry.isIntersecting && ref.current.visible) {
+					ref.current.visible = false;
 					setIntersecting((prevElements) =>
 						prevElements.filter(
 							(element) => element !== ref.current
@@ -25,16 +26,18 @@ const useIntersection = (refs, options) => {
 
 		refs.forEach((ref, index) => {
 			if (ref.current) {
+				ref.current.visible = false;
 				observers[index].observe(ref.current);
 			}
 		});
 
 		return () => {
-			refs.forEach((ref, index) => {
-				if (ref.current) {
-					observers[index].unobserve(ref.current);
-				}
-			})
+			// refs.forEach((ref, index) => {
+			// 	if (ref.current) {
+			// 		observers[index].unobserve(ref.current);
+			// 	}
+			// })
+			observers.forEach((observer) => observer.disconnect());
 		};
 	}, [refs, options]);
 
