@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import useIntersection from "../../hooks/useIntersection";
 import Icon from "@mdi/react";
 import { mdiGithub } from "@mdi/js";
 import { mdiOpenInNew } from "@mdi/js";
@@ -6,10 +7,14 @@ import mockup from "../../assets/images/mockup.png";
 import style from "./project.module.scss";
 
 function ProjecLeft(props) {
+	const refs = [useRef(), useRef()];
+	const options = { rootMargin: "-100px" };
+	const isIntersecting = useIntersection(refs, options);
+
 	return (
 		<div className={style.content}>
 			<div className={style.mockup}>
-				<img src={mockup} className={style.laptop} alt="laptop"/>
+				<img src={mockup} className={style.laptop} alt="laptop" />
 				<img
 					src={props.preview}
 					alt="preview"
@@ -17,7 +22,16 @@ function ProjecLeft(props) {
 				/>
 			</div>
 			<div className={style.description} style={props.projectStyle}>
-				<h2 className={style.title}>{props.title}</h2>
+				<h2
+					className={`${style.title} ${
+						isIntersecting.includes(refs[0].current)
+							? style.show
+							: style.hidden
+					}`}
+					ref={refs[0]}
+				>
+					{props.title}
+				</h2>
 				<p className={style.paragraph}>{props.summary}</p>
 				<div
 					className={style.description__bottom}
@@ -64,10 +78,23 @@ function ProjecLeft(props) {
 }
 
 function ProjectRight(props) {
+	const refs = [useRef(), useRef()];
+	const options = { rootMargin: "-100px" };
+	const isIntersecting = useIntersection(refs, options);
+
 	return (
 		<div className={style.content}>
 			<div className={style.description} style={props.projectStyle}>
-				<h2 className={style.title}>{props.title}</h2>
+				<h2
+					className={`${style.title} ${
+						isIntersecting.includes(refs[0].current)
+							? style.show
+							: style.hidden
+					}`}
+					ref={refs[0]}
+				>
+					{props.title}
+				</h2>
 				<p className={style.paragraph}>{props.summary}</p>
 				<div
 					className={style.description__bottom}
@@ -135,9 +162,5 @@ export default function Project(props) {
 			<ProjectRight {...props} projectStyle={projectStyle} />
 		);
 
-	return (
-		<div className={style.container}>
-			{content}
-		</div>
-	);
+	return <div className={style.container}>{content}</div>;
 }
