@@ -19,7 +19,7 @@ export default function About() {
 	// }, [])
 
 	const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
-	const options = { rootMargin: "-150px" };
+	const options = { rootMargin: "-50px" };
 	const isIntersecting = useIntersection(refs, options);
 
 	return (

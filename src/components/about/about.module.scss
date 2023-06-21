@@ -16,14 +16,10 @@
 	align-items: center;
 	transition: all 0.5s ease-in-out;
 	&.hidden {
-		opacity: 0;
-		filter: blur(10px);
-		transform: translateX(-100%);
+		@include hiddenLeft;
 	}
 	&.show {
-		opacity: 1;
-		filter: blur(0);
-		transform: translateX(0px);
+		@include show;
 	}
 	&:after {
 		@include heading__line;
@@ -45,14 +41,10 @@
 				color: $primary-color;
 			}
 			&.hidden {
-				opacity: 0;
-				filter: blur(10px);
-				transform: translateX(-100%);
+				@include hiddenLeft;
 			}
 			&.show {
-				opacity: 1;
-				filter: blur(0);
-				transform: translateX(0px);
+				@include show;
 			}
 		}
 	}
@@ -67,14 +59,10 @@
 	transition: all 0.5s ease-in-out;
 	//animation: spin 10s linear infinite;
 	&.hidden {
-		opacity: 0;
-		filter: blur(10px);
-		transform: translateX(200px);
+		@include hiddenRight;
 	}
 	&.show {
-		opacity: 1;
-		filter: blur(0);
-		transform: translateX(0px);
+		@include show;
 	}
 	.myself {
 		//position: relative;

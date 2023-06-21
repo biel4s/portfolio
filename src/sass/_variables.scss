@@ -49,3 +49,22 @@ $primary-color: #00c8ff;
 		transform: scale(0.9);
 	}
 }
+
+//INTERSECTION OBSERVER
+@mixin show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0px);
+}
+
+@mixin hiddenRight {
+	opacity: 1;
+	filter: blur(10px);
+	transform: translateX(200px);
+}
+
+@mixin hiddenLeft {
+	opacity: 1;
+	filter: blur(10px);
+	transform: translateX(-100%);
+}
