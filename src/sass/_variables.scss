@@ -58,13 +58,13 @@ $primary-color: #00c8ff;
 }
 
 @mixin hiddenRight {
-	opacity: 1;
-	filter: blur(10px);
+	opacity: 0;
+	filter: blur(5px);
 	transform: translateX(200px);
 }
 
 @mixin hiddenLeft {
-	opacity: 1;
-	filter: blur(10px);
-	transform: translateX(-100%);
+	opacity: 0;
+	filter: blur(5px);
+ 	transform: translateX(-100%);
 }
