@@ -9,6 +9,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
+	transition: all 0.5s ease-in-out;
 	&:before {
 		@include heading__line;
 		margin-right: 100px;
@@ -16,6 +17,15 @@
 	&:after {
 		@include heading__line;
 		margin-left: 100px;
+	}
+	&.hidden {
+		//@include hiddenRight;
+		opacity: 0;
+		filter: blur(5px);
+		scale: 0.1;
+	}
+	&.show {
+		@include show;
 	}
 }
 .content {

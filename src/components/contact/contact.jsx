@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import useIntersection from "../../hooks/useIntersection";
 import style from "./contact.module.scss";
 
 export default function Contact() {
@@ -35,10 +36,23 @@ export default function Contact() {
 		}
 	};
 
+	const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+	const options = { rootMargin: "-50px" };
+	const isIntersecting = useIntersection(refs, options);
+
 	return (
 		<div className={style.container} id="contact_container">
 			<div className={style.content}>
-				<h1 className={style.headingPrimary}>Contact</h1>
+				<h1
+					className={`${style.headingPrimary} ${
+						isIntersecting.includes(refs[0].current)
+							? style.show
+							: style.hidden
+					}`}
+					ref={refs[0]}
+				>
+					Contact
+				</h1>
 				<div className={style.test}>
 					<p className={style.paragraph}>
 						Please don't hesitate to reach out to me by filling out
