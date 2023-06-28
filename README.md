@@ -7,5 +7,6 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
 
 ### TODOs:
-- Intersection Observer
+- Fix contact button
+- Fix Project Title (intersection observer)
 - Media query
