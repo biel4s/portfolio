@@ -7,7 +7,7 @@ import mockup from "../../assets/images/mockup.png";
 import style from "./project.module.scss";
 
 function ProjecLeft(props) {
-	const refs = [useRef(), useRef(), useRef(), useRef()];
+	const refs = [useRef(), useRef(), useRef()];
 	const options = { rootMargin: "-25px" };
 	const isIntersecting = useIntersection(refs, options);
 
@@ -51,12 +51,12 @@ function ProjecLeft(props) {
 				</p>
 				<div
 					className={`${style.details} ${
-						isIntersecting.includes(refs[3].current)
+						isIntersecting.includes(refs[2].current)
 							? style.show
 							: style.hiddenRight
 					}`}
 					style={props.projectStyle}
-					ref={refs[3]}
+					ref={refs[2]}
 				>
 					<div style={{ marginRight: "30px" }}>
 						<a href={props.github} target="_blank" rel="noreferrer">
@@ -99,7 +99,7 @@ function ProjecLeft(props) {
 }
 
 function ProjectRight(props) {
-	const refs = [useRef(), useRef(), useRef(), useRef()];
+	const refs = [useRef(), useRef(), useRef()];
 	const options = { rootMargin: "-25px" };
 	const isIntersecting = useIntersection(refs, options);
 
@@ -128,12 +128,12 @@ function ProjectRight(props) {
 				</p>
 				<div
 					className={`${style.details} ${
-						isIntersecting.includes(refs[2].current)
+						isIntersecting.includes(refs[1].current)
 							? style.show
 							: style.hiddenLeft
 					}`}
 					style={props.projectStyle}
-					ref={refs[2]}
+					ref={refs[1]}
 				>
 					<span className={style.technology}>
 						{props.technology1}
@@ -173,11 +173,11 @@ function ProjectRight(props) {
 			</div>
 			<div
 				className={`${style.mockup} ${
-					isIntersecting.includes(refs[3].current)
+					isIntersecting.includes(refs[2].current)
 						? style.show
 						: style.hiddenRight
 				}`}
-				ref={refs[3]}
+				ref={refs[2]}
 			>
 				<img src={mockup} className={style.laptop} alt="mockup" />
 				<img

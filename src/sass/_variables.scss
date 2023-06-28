@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 $primary-font: "Lato", sans-serif;
-$secondary-font: 'Train One', cursive;
+$secondary-font: "Train One", cursive;
 $font-light: 300;
 $font-regular: 400;
 $font-bold: 700;
@@ -27,7 +27,7 @@ $primary-color: #00c8ff;
 	background: $primary-color;
 	width: 100%;
 	height: 3px;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 @mixin button {
 	display: flex;
@@ -43,10 +43,12 @@ $primary-color: #00c8ff;
 	transition: all 0.5s;
 	&:hover {
 		background-color: $primary-color;
+
 	}
 	&:active {
-		transition: 0.2s;
+		transition: transform 0.5s;
 		transform: scale(0.9);
+		
 	}
 }
 
@@ -66,5 +68,11 @@ $primary-color: #00c8ff;
 @mixin hiddenLeft {
 	opacity: 0;
 	filter: blur(5px);
- 	transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+@mixin hiddenBottom {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateY(100%);
 }

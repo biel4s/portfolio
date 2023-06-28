@@ -36,7 +36,7 @@ export default function Contact() {
 		}
 	};
 
-	const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+	const refs = [useRef(), useRef(), useRef(), useRef()];
 	const options = { rootMargin: "-50px" };
 	const isIntersecting = useIntersection(refs, options);
 
@@ -54,12 +54,27 @@ export default function Contact() {
 					Contact
 				</h1>
 				<div className={style.test}>
-					<p className={style.paragraph}>
+					<p
+						className={`${style.paragraph} ${
+							isIntersecting.includes(refs[1].current)
+								? style.show
+								: style.hidden
+						}`}
+						ref={refs[1]}
+					>
 						Please don't hesitate to reach out to me by filling out
 						the form below. I'll do my best to respond to you as
 						soon as I can.
 					</p>
-					<form className={style.form} autoComplete="off">
+					<form
+						className={`${style.form} ${
+							isIntersecting.includes(refs[2].current)
+								? style.show
+								: style.hidden
+						}`}
+						ref={refs[2]}
+						autoComplete="off"
+					>
 						<input
 							placeholder={namePlaceholder}
 							type="text"
@@ -88,7 +103,16 @@ export default function Contact() {
 							required
 						></textarea>
 					</form>
-					<button className={style.btn}>Submit</button>
+					<button
+						className={`${style.btn} ${
+							isIntersecting.includes(refs[3].current)
+								? style.show
+								: style.hidden
+						}`}
+						ref={refs[3]}
+					>
+						Submit
+					</button>
 				</div>
 			</div>
 		</div>

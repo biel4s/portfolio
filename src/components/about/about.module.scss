@@ -64,10 +64,12 @@
 	}
 	&.show {
 		@include show;
+		
 	}
 	.myself {
 		//position: relative;
 		top: 5px;
+		width: 350px;
 	}
 	// @keyframes spin {
 	// 	100% {
