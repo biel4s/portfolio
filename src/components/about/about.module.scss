@@ -14,7 +14,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s;
 	&.hidden {
 		@include hiddenLeft;
 	}
@@ -36,7 +36,7 @@
 		.paragraph {
 			max-width: clamp(50px, 35vw, 1000px);
 			font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
-			transition: all 0.5s ease-in-out;
+			transition: all 1s;
 			.highlight {
 				color: $primary-color;
 			}
@@ -58,13 +58,12 @@
 	overflow: hidden;
 	transition: all 1s;
 	//animation: spin 10s linear infinite;
-	transition-delay: 0.1s;
+	transition-delay: 0.3s;
 	&.hidden {
 		@include hiddenLeft;
 	}
 	&.show {
 		@include show;
-		
 	}
 	.myself {
 		//position: relative;
