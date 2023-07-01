@@ -9,4 +9,5 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ### TODOs:
 - Fix contact button
 - Fix Project Title (intersection observer)
+- Fix intersection in Projects section
 - Media query
