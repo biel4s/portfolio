@@ -10,4 +10,4 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 - Fix contact button
 - Fix Project Title (intersection observer)
 - Fix intersection in Projects section
-- Media query
+- Add Media queries for mobile
