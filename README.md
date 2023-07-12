@@ -7,6 +7,6 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
 
 ### TODOs:
-- Fix contact button
+- Fix contact button (hover and active)
 - Fix Project Title (intersection observer)
 - Add Media queries for mobile
