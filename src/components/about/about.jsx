@@ -49,13 +49,11 @@ export default function About() {
 							<span className={style.highlight}>
 								Kamil Bielawski
 							</span>
-							, and I'm a third-year student studying front-end
-							web development in Gdańsk. I'm currently learning
-							and using React in my projects, and it's quickly
-							become my favorite library to work with. I love how
-							it simplifies the process of building complex user
-							interfaces and makes it easy to reuse code across
-							different parts of a website.
+							, and I'm a Computer Science student studying front-end
+							web development in Gdańsk. I was learning React during my studies
+							and I've completed few projects using this library. I'm currently learning
+							and using Angular in my projects, and it's quickly
+							become my favorite framework to work with.
 						</p>
 						<p
 							className={`${style.paragraph} ${
@@ -67,13 +65,11 @@ export default function About() {
 						>
 							As a front-end developer, I'm passionate about
 							creating beautiful, responsive websites that provide
-							a great user experience. During my studies, I've had
+							a great user experience. During my education, I've had
 							the opportunity to work on a variety of projects,
-							both individually and as part of a team. I've
-							learned how to code using HTML, CSS, and JavaScript,
-							and I'm constantly looking for new ways to improve
-							my skills and stay up-to-date with the latest
-							industry trends.
+							both individually and as part of a team. I'm constantly
+							looking for new ways to improve	my skills and stay
+							up-to-date with the latest industry trends.
 						</p>
 						<p
 							className={`${style.paragraph} ${

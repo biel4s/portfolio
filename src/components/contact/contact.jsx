@@ -104,6 +104,7 @@ export default function Contact() {
 						></textarea>
 					</form>
 					<button
+						disabled={true}
 						className={`${style.btn} ${
 							isIntersecting.includes(refs[3].current)
 								? style.show

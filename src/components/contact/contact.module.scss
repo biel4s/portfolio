@@ -84,8 +84,12 @@
 
 .btn {
 	@include button;
+	cursor: not-allowed !important;
 	margin: 50px auto;
 	transition: all 1s;
+	&:hover {
+		background-color: transparent;
+	}
 	&.hidden {
 		@include hiddenBottom;
 		transition: transform, opacity, filter 0.5s;
@@ -95,13 +99,5 @@
 		transition-delay: 0.5s;
 		transition-property: transform, opacity, filter;
 	}
-	&:hover {
-		background-color: $primary-color;
-		transition-delay: 0s;
-		transition-property: background-color;
-	}
-	&:active {
-		transition: transform 0.2s;
-		transform: scale(0.9);
-	}
+
 }
