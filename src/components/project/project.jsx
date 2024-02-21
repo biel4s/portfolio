@@ -6,7 +6,7 @@ import { mdiOpenInNew } from "@mdi/js";
 import mockup from "../../assets/images/mockup.png";
 import style from "./project.module.scss";
 
-function ProjecLeft(props) {
+function ProjectLeft(props) {
 	const refs = [useRef(), useRef(), useRef(), useRef()];
 	const options = { rootMargin: "-50px" };
 	const isIntersecting = useIntersection(refs, options);
@@ -199,7 +199,7 @@ export default function Project(props) {
 
 	const content =
 		props.mockupPosition === "left" ? (
-			<ProjecLeft {...props} projectStyle={projectStyle} /> // IF POSITION IS SOMETHING ELSE (RIGHT)
+			<ProjectLeft {...props} projectStyle={projectStyle} /> // IF POSITION IS SOMETHING ELSE (RIGHT)
 		) : (
 			<ProjectRight {...props} projectStyle={projectStyle} />
 		);

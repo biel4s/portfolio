@@ -4,19 +4,6 @@ import style from "./about.module.scss";
 import myself from "../../assets/images/myself2.png";
 
 export default function About() {
-	// const myRef = useRef(null);
-	// const [isVisible, setIsVisible] = useState(false);
-	// console.log('isVisible', isVisible)
-
-	// useEffect(() => {
-	// 	const observer = new IntersectionObserver((entries) => {
-	// 		const entry = entries[0];
-	// 		setIsVisible(entry.isIntersecting);
-	// 	},
-	// 		{ rootMargin: "-100px" }
-	// 	);
-	// 	observer.observe(myRef.current);
-	// }, [])
 
 	const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
 	const options = { rootMargin: "-50px" };

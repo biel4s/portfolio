@@ -32,11 +32,6 @@ const useIntersection = (refs, options) => {
 		});
 
 		return () => {
-			// refs.forEach((ref, index) => {
-			// 	if (ref.current) {
-			// 		observers[index].unobserve(ref.current);
-			// 	}
-			// })
 			observers.forEach((observer) => observer.disconnect());
 		};
 	}, [refs, options]);
@@ -45,40 +40,3 @@ const useIntersection = (refs, options) => {
 };
 
 export default useIntersection;
-
-// const observerCallback = (entries, observer) => {
-// 	entries.forEach((entry) => {
-// 		if (entry.isIntersecting) setIsVisible(entry.isIntersecting);
-// 		if (entry.isIntersecting) observer.unobserve(entry.target);
-// 	});
-
-// 	//setIsVisible(entry.isIntersecting);
-// 	//if (entry.isIntersecting) observer.unobserve(entry.target);
-// };
-
-// const optionsMemo = useMemo(() => {
-// 	return options;
-// }, [options]);
-
-// useEffect(() => {
-// 	const observer = new IntersectionObserver(
-// 		([entry]) => setIsVisible(entry.isVisible),
-// 		{ rootMargin: "-100px" }
-// 	);
-
-// 	observer.observe(ref.current);
-
-// 	return () => observer.disconnect();
-// }, [isVisible]);
-
-// useEffect(() => {
-// 	if (isVisible) {
-// 		ref.current.querySelectorAll("div").forEach((el) => {
-// 			el.classList.add("show");
-// 		});
-// 	} else {
-// 		ref.current.querySelectorAll("div").forEach((el) => {
-// 			el.classList.add("hidden");
-// 		});
-// 	}
-// }, [isVisible]);
