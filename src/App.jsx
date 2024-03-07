@@ -15,19 +15,31 @@ export default function App() {
 			<About />
 			<div className={style.projects} id="projects_container">
 				<div className={style.firstProject}>
-					<h1 className={style.headingPrimary} >Projects</h1>
+					<h1 className={style.headingPrimary}>Projects</h1>
 					<Project
-						mockupPosition="left"
-						title="Weiser"
-						summary="My first major project was a website template for a welding company. The process of creating my own design helped me understand the importance of the attention to detail, colors, and aesthetics of a website. The main goal of the project was to apply my foundational knowledge of HTML and CSS in a practical manner."
-						preview="https://i.imgur.com/ZWcvMG3.png"
-						github="https://github.com/biel4s/Weiser"
-						netlify="https://biel4s.github.io/Weiser/"
-						technology1="HTML"
-						technology2="CSS"
-						technology3="JavaScript"
+						mockupPosition="right"
+						title="Slamdunk"
+						summary="Engineering thesis project.."
+						preview="https://imgur.com/xgWFnHF.png"
+						github="https://github.com/biel4s/slamdunk"
+						netlify="https://slamdunk2.netlify.app"
+						technology1="Angular"
+						technology2="TypeScript"
+						technology3="Firebase Auth"
+						technology4="JavaScript"
 					/>
 				</div>
+				<Project
+					mockupPosition="left"
+					title="Weiser"
+					summary="My first major project was a website template for a welding company. The process of creating my own design helped me understand the importance of the attention to detail, colors, and aesthetics of a website. The main goal of the project was to apply my foundational knowledge of HTML and CSS in a practical manner."
+					preview="https://i.imgur.com/ZWcvMG3.png"
+					github="https://github.com/biel4s/Weiser"
+					netlify="https://biel4s.github.io/Weiser/"
+					technology1="HTML"
+					technology2="CSS"
+					technology3="JavaScript"
+				/>
 				<Project
 					mockupPosition="right"
 					title="Weather In"

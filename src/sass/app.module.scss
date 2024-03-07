@@ -2,19 +2,24 @@
 
 .container {
 	color: white;
+	/*
 	background: linear-gradient(to right, #17181d, #2e3d5a);
+	*/
+	background: linear-gradient(90deg, rgba(23,24,29,1) 0%, rgba(46,61,90,1) 100%);
 }
 
 .projects {
 	padding-top: 50px;
 	@include theme;
 }
+
 .firstProject {
 	.headingPrimary {
 		@include heading;
 		display: flex;
 		align-items: center;
 		width: 100%;
+
 		&:before {
 			@include heading__line;
 			margin-right: 100px;

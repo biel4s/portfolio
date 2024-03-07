@@ -3,7 +3,6 @@
 .container {
 	//background-image: url(../assets/images/noise.png);
 	background-color: #003b4b;
-	
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -12,30 +11,36 @@
 		height: 120px;
 	}
 }
+
 .top {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 50%;
+
 	.list {
 		padding: 0;
 		list-style: none;
+
 		.item {
 			margin: 0 20px;
 		}
 	}
+
 	.button {
 	cursor: pointer;
 	font-size: 1rem;
 	color: #fff;
 	background: none;
 	border: none;
+
 		&:hover {
 			color:$primary-color;
 			transition: all 0.25s ease-in-out;
 		}
 	}
 }
+
 .bottom {
 	display: flex;
 	align-items: center;
@@ -46,6 +51,7 @@
 
 .bottomLeft {
 	font-size: 0.8rem;
+
 	&:before {
 		content: "";
 		background: rgba(255, 255, 255, 0.5);
@@ -64,6 +70,7 @@
 		margin: 0 5px;
 		transition: all 0.2s;
 		color: $primary-color;
+
 		&:hover {
 			scale: 1.2;
 		}

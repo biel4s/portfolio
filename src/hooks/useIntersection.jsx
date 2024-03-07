@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const useIntersection = (refs, options) => {
 	const [intersecting, setIntersecting] = useState([]);
-	console.log("isVisible", intersecting);
 
 	useEffect(() => {
 		const observers = refs.map((ref) => {

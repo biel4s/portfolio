@@ -10,36 +10,45 @@
 	display: flex;
 	align-items: center;
 	transition: all 1s;
+
 	&:before {
 		@include heading__line;
 		margin-right: 100px;
 	}
+
 	&:after {
 		@include heading__line;
 		margin-left: 100px;
 	}
+
 	&.hidden {
 		@include hiddenBottom;
 	}
+
 	&.show {
 		@include show;
 	}
 }
+
 .content {
 	width: 70vw;
+
 	.test {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
+
 	.paragraph {
 		max-width: clamp(100px, 30vw, 1000px);
 		font-size: 1.2rem;
 		text-align: center;
 		transition: all 1s;
+
 		&.hidden {
 			@include hiddenBottom;
 		}
+
 		&.show {
 			@include show;
 		}
@@ -51,12 +60,15 @@
 	flex-direction: column;
 	padding-top: 50px;
 	transition: all 1s;
+
 	&.hidden {
 		@include hiddenBottom;
 	}
+
 	&.show {
 		@include show;
 	}
+
 	.input {
 		border-radius: 5px;
 		font-size: 1rem;
@@ -68,13 +80,16 @@
 		min-width: 30vw;
 		max-width: 70vw;
 		color: white;
+
 		&::placeholder {
 			color: white;
 		}
+
 		&:focus {
 			outline: none;
 		}
 	}
+
 	textarea {
 		font-size: 1.5rem;
 		min-height: 150px;
@@ -87,17 +102,19 @@
 	cursor: not-allowed !important;
 	margin: 50px auto;
 	transition: all 1s;
+
 	&:hover {
 		background-color: transparent;
 	}
+
 	&.hidden {
 		@include hiddenBottom;
 		transition: transform, opacity, filter 0.5s;
 	}
+
 	&.show {
 		@include show;
 		transition-delay: 0.5s;
 		transition-property: transform, opacity, filter;
 	}
-
 }

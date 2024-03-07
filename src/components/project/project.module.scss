@@ -2,6 +2,7 @@
 
 .container {
 	width: 70vw;
+
 	.content {
 		display: flex;
 		align-items: center;
@@ -12,16 +13,20 @@
 .description {
 	padding-bottom: 50px;
 	max-width: 450px;
+
 	.title {
 		color: $primary-color;
 		font-size: 2.1rem;
 		transition: all 1s;
+
 		&.hiddenRight {
 			@include hiddenRight;
 		}
+
 		&.hiddenLeft {
 			@include hiddenLeft;
 		}
+
 		&.show {
 			@include show;
 		}
@@ -30,12 +35,15 @@
 	.paragraph {
 		font-size: 1.3rem;
 		transition: all 1s;
+
 		&.hiddenRight {
 			@include hiddenRight;
 		}
+
 		&.hiddenLeft {
 			@include hiddenLeft;
 		}
+
 		&.show {
 			@include show;
 		}
@@ -45,20 +53,25 @@
 .details {
 	display: flex;
 	transition: all 1s;
+
 	&.hiddenRight {
 		@include hiddenRight;
 	}
+
 	&.hiddenLeft {
 		@include hiddenLeft;
 	}
+
 	&.show {
 		@include show;
 	}
+
 	.link {
 		cursor: pointer;
 		margin: 0 2px;
 		transition: all 0.2s;
 		color: rgba($primary-color, 0.6);
+
 		&:hover {
 			scale: 1.2;
 			color: $primary-color;
@@ -70,6 +83,7 @@
 		font-size: 1.1rem;
 		display: flex;
 		align-items: center;
+
 		&:first-of-type {
 			padding-right: 15px;
 		}
@@ -81,18 +95,23 @@
 	scale: width(200px, 35vw, 800px);
 	margin: 25px 0;
 	transition: all 1s;
+
 	&.hiddenRight {
 		@include hiddenRight;
 	}
+
 	&.hiddenLeft {
 		@include hiddenLeft;
 	}
+
 	&.show {
 		@include show;
 	}
+
 	.laptop {
 		max-width: 700px;
 	}
+
 	.preview {
 		position: absolute;
 		top: 27px;

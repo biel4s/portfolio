@@ -39,12 +39,14 @@
 .btn {
 	@include button;
 	padding: 15px 30px;
+
 	&:hover {
 		.arrow {
 			transform: rotate(90deg);
 			top: 50%;
 		}
 	}
+
 	.arrow {
 		margin-left: 20px;
 		transition: all 0.3s;

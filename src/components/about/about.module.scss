@@ -4,6 +4,7 @@
 	@include theme;
 	justify-content: space-between;
 	padding: 50px 0;
+
 	.content {
 		width: 70vw;
 	}
@@ -15,12 +16,15 @@
 	display: flex;
 	align-items: center;
 	transition: all 1s;
+
 	&.hidden {
 		@include hiddenLeft;
 	}
+
 	&.show {
 		@include show;
 	}
+
 	&:after {
 		@include heading__line;
 		margin-left: 100px;
@@ -31,18 +35,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	.text {
 		text-align: justify;
+
 		.paragraph {
 			max-width: clamp(50px, 35vw, 1000px);
 			font-size: clamp(1rem, 1rem + 0.5vw, 1.3rem);
 			transition: all 1s;
+
 			.highlight {
 				color: $primary-color;
 			}
+
 			&.hidden {
 				@include hiddenLeft;
 			}
+
 			&.show {
 				@include show;
 			}
@@ -59,17 +68,21 @@
 	transition: all 1s;
 	//animation: spin 10s linear infinite;
 	transition-delay: 0.3s;
+
 	&.hidden {
 		@include hiddenLeft;
 	}
+
 	&.show {
 		@include show;
 	}
+
 	.myself {
 		//position: relative;
 		top: 5px;
 		width: 350px;
 	}
+
 	// @keyframes spin {
 	// 	100% {
 	// 		transform: rotate(360deg);

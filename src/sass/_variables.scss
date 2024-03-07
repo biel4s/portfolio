@@ -15,6 +15,7 @@ $primary-color: #00c8ff;
 	align-items: center;
 	flex-direction: column;
 }
+
 @mixin heading {
 	font-family: $secondary-font;
 	color: $primary-color;
@@ -22,6 +23,7 @@ $primary-color: #00c8ff;
 	font-size: 2.3rem;
 	letter-spacing: 1px;
 }
+
 @mixin heading__line {
 	content: "";
 	background: $primary-color;
@@ -29,6 +31,7 @@ $primary-color: #00c8ff;
 	height: 3px;
 	border-radius: 5px;
 }
+
 @mixin button {
 	display: flex;
 	align-items: center;
@@ -41,9 +44,11 @@ $primary-color: #00c8ff;
 	padding: 15px 50px;
 	margin-top: 50px;
 	transition: all 0.2s;
+
 	&:hover {
 		background-color: $primary-color;
 	}
+
 	&:active {
 		transition: transform 0.2s;
 		transform: scale(0.9);
