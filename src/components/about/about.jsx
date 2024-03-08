@@ -36,10 +36,8 @@ export default function About() {
 							<span className={style.highlight}>
 								Kamil Bielawski
 							</span>
-							, and I'm a Computer Science student studying front-end
-							web development in Gdańsk. I was learning React during my studies
-							and I've completed few projects using this library. I'm currently learning
-							and using Angular in my projects, and it's quickly
+							, and I'm a graduate of engineering studies in Computer Science with a specialization in Front-end Development. I was learning React during my studies
+							and I've completed few projects using this library. During my three-month intership I was working with Angular, and it's quickly
 							become my favorite framework to work with.
 						</p>
 						<p

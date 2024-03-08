@@ -32,6 +32,23 @@
 		}
 	}
 
+	.year {
+		color: rgba($primary-color, 0.8);
+		margin-top: -10px;
+
+		&.hiddenRight {
+			@include hiddenRight;
+		}
+
+		&.hiddenLeft {
+			@include hiddenLeft;
+		}
+
+		&.show {
+			@include show;
+		}
+	}
+
 	.paragraph {
 		font-size: 1.3rem;
 		transition: all 1s;
