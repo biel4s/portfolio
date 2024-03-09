@@ -13,64 +13,7 @@
 .description {
 	padding-bottom: 50px;
 	max-width: 450px;
-
-	.title {
-		color: $primary-color;
-		font-size: 2.1rem;
-		transition: all 1s;
-
-		&.hiddenRight {
-			@include hiddenRight;
-		}
-
-		&.hiddenLeft {
-			@include hiddenLeft;
-		}
-
-		&.show {
-			@include show;
-		}
-	}
-
-	.year {
-		color: rgba($primary-color, 0.8);
-		margin-top: -10px;
-
-		&.hiddenRight {
-			@include hiddenRight;
-		}
-
-		&.hiddenLeft {
-			@include hiddenLeft;
-		}
-
-		&.show {
-			@include show;
-		}
-	}
-
-	.paragraph {
-		font-size: 1.3rem;
-		transition: all 1s;
-
-		&.hiddenRight {
-			@include hiddenRight;
-		}
-
-		&.hiddenLeft {
-			@include hiddenLeft;
-		}
-
-		&.show {
-			@include show;
-		}
-	}
-}
-
-.details {
-	display: flex;
 	transition: all 1s;
-
 	&.hiddenRight {
 		@include hiddenRight;
 	}
@@ -82,6 +25,24 @@
 	&.show {
 		@include show;
 	}
+
+	.title {
+		color: $primary-color;
+		font-size: 2.1rem;
+	}
+
+	.year {
+		color: rgba($primary-color, 0.8);
+		margin-top: -10px;
+	}
+
+	.paragraph {
+		font-size: 1.3rem;
+	}
+}
+
+.details {
+	display: flex;
 
 	.link {
 		cursor: pointer;

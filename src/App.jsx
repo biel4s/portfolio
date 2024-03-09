@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
 import About from "./components/about/about";
@@ -6,8 +6,14 @@ import Project from "./components/project/project";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import style from "./sass/app.module.scss";
+import useIntersection from "./hooks/useIntersection";
 
 export default function App() {
+
+	const refs = [useRef()];
+	const options = { rootMargin: "-50px" };
+	const isIntersecting = useIntersection(refs, options);
+
 	return (
 		<div className={style.container}>
 			<Header />
@@ -15,7 +21,16 @@ export default function App() {
 			<About />
 			<div className={style.projects} id="projects_container">
 				<div className={style.firstProject}>
-					<h1 className={style.headingPrimary}>Projects</h1>
+					<h1
+						className={`${style.headingPrimary} ${
+							isIntersecting.includes(refs[0].current)
+								? style.show
+								: style.hidden
+						}`}
+						ref={refs[0]}
+					>
+						Projects
+					</h1>
 					<Project
 						mockupPosition="right"
 						year="2024"
