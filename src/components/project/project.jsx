@@ -8,7 +8,7 @@ import style from "./project.module.scss";
 
 function ProjectLeft(props) {
     const refs = [useRef(), useRef()];
-    const options = {rootMargin: "-50px"};
+    const options = {rootMargin: "-150px"};
     const isIntersecting = useIntersection(refs, options);
     return (
         <div className={style.content}>
@@ -35,7 +35,7 @@ function ProjectLeft(props) {
                     </div>
                     <span className={style.technology}>{props.technology1}</span>
                     <span className={style.technology}>{props.technology2}</span>
-                    {props.technology3 ? (<span className={style.technology} style={{paddingLeft: "10px"}}>
+                    {props.technology3 ? (<span className={style.technology} style={{paddingLeft: "15px"}}>
 							{props.technology3}
 						</span>) : null}
                 </div>
@@ -46,7 +46,7 @@ function ProjectLeft(props) {
 
 function ProjectRight(props) {
     const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
-    const options = {rootMargin: "-50px"};
+    const options = {rootMargin: "-150px"};
     const isIntersecting = useIntersection(refs, options);
     return (
         <div className={style.content}>
@@ -63,7 +63,7 @@ function ProjectRight(props) {
                     <span className={style.technology}>
 						{props.technology2}
 					</span>{props.technology3 ? (
-                    <span className={style.technology} style={{paddingLeft: "10px"}}>
+                    <span className={style.technology} style={{paddingLeft: "15px"}}>
 							{props.technology3}
 						</span>) : null}
                     <div style={{marginLeft: "30px"}}>

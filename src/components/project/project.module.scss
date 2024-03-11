@@ -33,7 +33,7 @@
 
 	.year {
 		color: rgba($primary-color, 0.8);
-		margin-top: -10px;
+		margin-top: -20px;
 	}
 
 	.paragraph {
@@ -61,6 +61,7 @@
 		font-size: 1.1rem;
 		display: flex;
 		align-items: center;
+		text-align: center;
 
 		&:first-of-type {
 			padding-right: 15px;
@@ -70,7 +71,6 @@
 
 .mockup {
 	position: relative;
-	scale: width(200px, 35vw, 800px);
 	margin: 25px 0;
 	transition: all 1s;
 
@@ -102,13 +102,17 @@
 //Media Queries
 
 @media screen and (max-width: 1024px) {
-	.content {
+	.content, .description {
 		flex-direction: column;
+		min-width: 100%;
+		padding-bottom: 0 !important;
 	}
 }
 
 @media screen and (max-width: 768px) {
-
+	.mockup, .laptop, .preview {
+		transform: scale(0.8);
+	}
 }
 
 @media screen and (max-width: 480px) {

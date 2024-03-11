@@ -2,9 +2,6 @@
 
 .container {
 	color: white;
-	/*
-	background: linear-gradient(to right, #17181d, #2e3d5a);
-	*/
 	background: linear-gradient(90deg, rgba(23,24,29,1) 0%, rgba(46,61,90,1) 100%);
 }
 
@@ -32,6 +29,32 @@
 		&:before {
 			@include heading__line;
 			margin-right: 100px;
+		}
+	}
+}
+
+//Media Queries
+
+@media screen and (max-width: 1024px) {
+	.headingPrimary {
+		&:before {
+			margin-right: 60px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.headingPrimary {
+		&:before {
+			margin-right: 30px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.headingPrimary {
+		&:before {
+			margin-right: 20px !important;
 		}
 	}
 }

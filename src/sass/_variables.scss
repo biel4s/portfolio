@@ -22,6 +22,10 @@ $primary-color: #00c8ff;
 	text-transform: uppercase;
 	font-size: 2.3rem;
 	letter-spacing: 1px;
+
+	@media screen and (max-width: 480px) {
+		font-size: 2rem;
+	}
 }
 
 @mixin heading__line {
@@ -65,13 +69,13 @@ $primary-color: #00c8ff;
 @mixin hiddenRight {
 	opacity: 0;
 	filter: blur(5px);
-	transform: translateX(200px);
+	/*transform: translateX(100%);*/
 }
 
 @mixin hiddenLeft {
 	opacity: 0;
 	filter: blur(5px);
-	transform: translateX(-100%);
+	/*transform: translateX(-100%);*/
 }
 
 @mixin hiddenBottom {

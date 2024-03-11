@@ -11,7 +11,7 @@ import useIntersection from "./hooks/useIntersection";
 export default function App() {
 
 	const refs = [useRef()];
-	const options = { rootMargin: "-50px" };
+	const options = {rootMargin: "-100px"};
 	const isIntersecting = useIntersection(refs, options);
 
 	return (
