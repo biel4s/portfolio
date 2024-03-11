@@ -101,12 +101,16 @@
 
 //Media Queries
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 	.content, .description {
 		flex-direction: column;
 		min-width: 100%;
 		padding-bottom: 0 !important;
 	}
+}
+
+@media screen and (max-width: 1024px) {
+
 }
 
 @media screen and (max-width: 768px) {
