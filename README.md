@@ -7,6 +7,5 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
 
 ### TODOs:
-- Add Media queries for mobile (VERY IMPORTANT)
-- Fix contact button (hover and active)
-- Intersection observer bug
+- There is still a bug with intersection observer, causing element occupy space outside the view (happens only on the right side)
+- Finish hamburger menu
