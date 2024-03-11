@@ -76,16 +76,19 @@ export default function Header() {
 				${style[background ? "active" : "inactive"]}
 			`}
 		>
-			<div className={style.left} onClick={handleClick}>
+			<div className={style.brand} onClick={handleClick}>
 				<img src={logo} className={style.logo} alt="logo" />
 				<h2 className={style.headingPrimary}>
 					kamil
 					<span className={style.highlight}>&nbsp;bielawski</span>
 				</h2>
 			</div>
-			<nav className={style.right}>
+			<nav className={style.navMenu}>
 				{navLinks.map((nav) => renderNavLink(nav))}
 			</nav>
+			<button className={style.hamburgerMenu}>
+				Click
+			</button>
 		</header>
 	);
 }

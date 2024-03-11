@@ -15,8 +15,7 @@
 
 	.text,
 	.description {
-		font-size: 1rem;
-		font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+		font-size: clamp(1.5rem, 1rem + 1vw, 1.5rem);
 		margin: 0;
 	}
 
@@ -24,7 +23,7 @@
 		margin: 0;
 		color: $primary-color;
 		font-weight: $font-black;
-		font-size: 2.2em;
+		font-size: 2.1em;
 		padding-top: 0.8rem;
 	}
 
@@ -51,4 +50,20 @@
 		margin-left: 20px;
 		transition: all 0.3s;
 	}
+}
+
+//Media Queries
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		max-width: 70vw;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
 }

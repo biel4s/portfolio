@@ -5,7 +5,7 @@ import myself from "../../assets/images/myself2.png";
 
 export default function About() {
 
-	const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+	const refs = [useRef(), useRef(), useRef()];
 	const options = { rootMargin: "-50px" };
 	const isIntersecting = useIntersection(refs, options);
 
@@ -23,14 +23,13 @@ export default function About() {
 					About
 				</h1>
 				<div className={style.description}>
-					<div className={style.text}>
+					<div className={`${style.text} ${
+						isIntersecting.includes(refs[1].current)
+							? style.show
+							: style.hidden
+					}`} ref={refs[1]}>
 						<p
-							className={`${style.paragraph} ${
-								isIntersecting.includes(refs[1].current)
-									? style.show
-									: style.hidden
-							}`}
-							ref={refs[1]}
+							className={style.paragraph}
 						>
 							Hi there! My name is{" "}
 							<span className={style.highlight}>
@@ -41,12 +40,7 @@ export default function About() {
 							become my favorite framework to work with.
 						</p>
 						<p
-							className={`${style.paragraph} ${
-								isIntersecting.includes(refs[2].current)
-									? style.show
-									: style.hidden
-							}`}
-							ref={refs[2]}
+							className={style.paragraph}
 						>
 							As a front-end developer, I'm passionate about
 							creating beautiful, responsive websites that provide
@@ -57,12 +51,7 @@ export default function About() {
 							up-to-date with the latest industry trends.
 						</p>
 						<p
-							className={`${style.paragraph} ${
-								isIntersecting.includes(refs[3].current)
-									? style.show
-									: style.hidden
-							}`}
-							ref={refs[3]}
+							className={style.paragraph}
 						>
 							I'm excited to continue growing as a developer and
 							to share my skills with the world. If you'd like to
@@ -71,11 +60,11 @@ export default function About() {
 					</div>
 					<div
 						className={`${style.circle} ${
-							isIntersecting.includes(refs[4].current)
+							isIntersecting.includes(refs[2].current)
 								? style.show
 								: style.hidden
 						}`}
-						ref={refs[4]}
+						ref={refs[2]}
 					>
 						<img
 							src={myself}

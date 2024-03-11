@@ -38,22 +38,22 @@
 
 	.text {
 		text-align: justify;
+		transition: all 1s;
+
+		&.hidden {
+			@include hiddenLeft;
+		}
+
+		&.show {
+			@include show;
+		}
 
 		.paragraph {
 			max-width: clamp(50px, 35vw, 1000px);
 			font-size: clamp(1rem, 1rem + 0.5vw, 1.3rem);
-			transition: all 1s;
 
 			.highlight {
 				color: $primary-color;
-			}
-
-			&.hidden {
-				@include hiddenLeft;
-			}
-
-			&.show {
-				@include show;
 			}
 		}
 	}
@@ -66,7 +66,6 @@
 	border-radius: 50%;
 	overflow: hidden;
 	transition: all 1s;
-	//animation: spin 10s linear infinite;
 	transition-delay: 0.3s;
 
 	&.hidden {
@@ -82,10 +81,22 @@
 		top: 5px;
 		width: 350px;
 	}
+}
 
-	// @keyframes spin {
-	// 	100% {
-	// 		transform: rotate(360deg);
-	// 	}
-	// 	}
+//Media Queries
+
+@media screen and (max-width: 1024px) {
+	.description {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+	 .text, .paragraph {
+		min-width: 100%;
+	}
 }

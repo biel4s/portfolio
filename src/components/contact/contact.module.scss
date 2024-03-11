@@ -33,7 +33,7 @@
 .content {
 	width: 70vw;
 
-	.test {
+	.wrapper {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -116,5 +116,23 @@
 		@include show;
 		transition-delay: 0.5s;
 		transition-property: transform, opacity, filter;
+	}
+}
+
+//Media Queries
+
+@media screen and (max-width: 1024px) {
+	.description {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+	.text, .paragraph, .form {
+		min-width: 100%;
 	}
 }

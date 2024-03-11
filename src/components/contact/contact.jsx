@@ -53,7 +53,7 @@ export default function Contact() {
 				>
 					Contact
 				</h1>
-				<div className={style.test}>
+				<div className={style.wrapper}>
 					<p
 						className={`${style.paragraph} ${
 							isIntersecting.includes(refs[1].current)
