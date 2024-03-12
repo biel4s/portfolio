@@ -69,6 +69,14 @@
 
 .hamburgerMenu {
 	display: none;
+
+/*	.hamburgerClose {
+		display: none;
+	}*/
+
+	.hamburgerOpen {
+		cursor: pointer;
+	}
 }
 
 .button {
@@ -114,13 +122,17 @@
 
 	.navMenu  {
 		display: none;
+
+		&.open {
+			background-color: blue;
+			display: flex;
+		}
 	}
 
 	.hamburgerMenu {
-		display: inherit;
+		display: block;
 		margin-right: 20px;
 	}
-
 }
 
 @media screen and (max-width: 480px) {
