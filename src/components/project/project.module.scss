@@ -28,7 +28,7 @@
 
 	.title {
 		color: $primary-color;
-		font-size: 2.1rem;
+		font-size: clamp(1.9rem, 1rem + 0.5vw, 2.1rem);
 	}
 
 	.year {
@@ -37,7 +37,7 @@
 	}
 
 	.paragraph {
-		font-size: 1.3rem;
+		font-size: clamp(1.2rem, 1rem + 0.5vw, 1.3rem);
 	}
 }
 

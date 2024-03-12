@@ -40,7 +40,7 @@
 
 	.paragraph {
 		max-width: clamp(100px, 30vw, 1000px);
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		text-align: center;
 		transition: all 1s;
 
@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	.content, .input{
+		width: 75vw !important;
+	}
+
 	.headingPrimary {
 		&:before {
 			margin-right: 30px;
@@ -154,9 +158,17 @@
 	.text, .paragraph, .form {
 		min-width: 100%;
 	}
+
+	.input {
+		max-width: 75vw !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.content, .input {
+		width: 80vw !important;
+	}
+
 	.headingPrimary {
 		&:before {
 			margin-right: 20px;
