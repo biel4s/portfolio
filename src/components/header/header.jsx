@@ -27,8 +27,12 @@ function useScrollDirection() {
 }
 
 export default function Header() {
-	//BACKGROUND
 	const [background, setBackground] = useState(false);
+	/*const [isOpen, setIsOpen] = useState(false);*/
+	const isHidden = useScrollDirection();
+	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
+	const scrollToHome = "home_container";
+
 	const changeBackground = () => {
 		if (window.scrollY >= 150) {
 			setBackground(true);
@@ -37,10 +41,6 @@ export default function Header() {
 		}
 	};
 	window.addEventListener("scroll", changeBackground);
-	const isHidden = useScrollDirection();
-
-	//NAV LINKS
-	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 	const renderNavLink = (content) => {
 		const scrollToId = `${content.toLowerCase()}_container`;
 
@@ -49,7 +49,6 @@ export default function Header() {
 				.getElementById(scrollToId)
 				.scrollIntoView({ behavior: "smooth" });
 		};
-
 		return (
 			<ul className={style.list} key={content}>
 				<li className={style.item}>
@@ -61,7 +60,6 @@ export default function Header() {
 		);
 	};
 
-	const scrollToHome = "home_container";
 	const handleClick = () => {
 		document
 			.getElementById(scrollToHome)

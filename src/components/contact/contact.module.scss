@@ -2,7 +2,6 @@
 
 .container {
 	@include theme;
-	padding: 50px 0;
 }
 .headingPrimary {
 	@include heading;
@@ -41,7 +40,7 @@
 
 	.paragraph {
 		max-width: clamp(100px, 30vw, 1000px);
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		text-align: center;
 		transition: all 1s;
 

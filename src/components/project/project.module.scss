@@ -44,17 +44,22 @@
 .details {
 	display: flex;
 
-	.link {
-		cursor: pointer;
-		margin: 0 2px;
-		transition: all 0.2s;
-		color: rgba($primary-color, 0.6);
 
-		&:hover {
-			scale: 1.2;
-			color: $primary-color;
+	.links{
+		justify-content: space-between !important;
+		.linkItem {
+			cursor: pointer;
+			margin: 0 2px;
+			transition: all 0.2s;
+			color: rgba($primary-color, 0.6);
+
+			&:hover {
+				scale: 1.2;
+				color: $primary-color;
+			}
 		}
 	}
+
 
 	.technology {
 		color: rgba($primary-color, 0.5);
@@ -63,8 +68,8 @@
 		align-items: center;
 		text-align: center;
 
-		&:first-of-type {
-			padding-right: 15px;
+		&:nth-of-type(2) {
+			padding: 0 15px;
 		}
 	}
 }
@@ -72,7 +77,8 @@
 .mockup {
 	position: relative;
 	margin: 25px 0;
-	transition: all 1s;
+	transition: all 1s, opacity 2s;
+	transition-delay: 0.3s;
 
 	&.hiddenRight {
 		@include hiddenRight;
@@ -114,13 +120,30 @@
 }
 
 @media screen and (max-width: 768px) {
+	.container {
+		width: 75vw !important;
+	}
+
 	.mockup, .laptop, .preview {
 		transform: scale(0.8);
 	}
 }
 
 @media screen and (max-width: 480px) {
+	.container {
+		width: 80vw !important;
+	}
+
+	.title {
+		font-size: 1.9rem !important;
+	}
+
 	.mockup {
 		display: none;
+	}
+
+	.paragraph {
+		text-align: justify;
+		text-justify: inter-word;
 	}
 }

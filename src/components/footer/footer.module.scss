@@ -28,11 +28,11 @@
 	}
 
 	.button {
-	cursor: pointer;
-	font-size: 1rem;
-	color: #fff;
-	background: none;
-	border: none;
+		cursor: pointer;
+		font-size: 1rem;
+		color: #fff;
+		background: none;
+		border: none;
 
 		&:hover {
 			color:$primary-color;
@@ -94,5 +94,9 @@
 
 	.bottomRight {
 		display: flex;
+	}
+
+	.button {
+		font-size: 0.85rem !important;
 	}
 }

@@ -20,7 +20,10 @@ const useIntersection = (refs, options) => {
 						)
 					);
 				}
-			}, options);
+			}, {
+				...options,
+				threshold: options?.threshold || 0.1
+			});
 		});
 
 		refs.forEach((ref, index) => {

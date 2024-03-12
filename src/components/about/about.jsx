@@ -6,7 +6,7 @@ import myself from "../../assets/images/myself2.png";
 export default function About() {
 
 	const refs = [useRef(), useRef(), useRef()];
-	const options = { rootMargin: "-50px" };
+	const options = { rootMargin: "0px" };
 	const isIntersecting = useIntersection(refs, options);
 
 	return (
