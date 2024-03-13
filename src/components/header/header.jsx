@@ -3,9 +3,6 @@ import logo from "../../assets/images/logo-white.png";
 import style from "./header.module.scss";
 import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';
-/*
-import { mdiWindowClose } from '@mdi/js';
-*/
 
 //SCROLL FUNCTION
 function useScrollDirection() {
@@ -57,7 +54,7 @@ export default function Header() {
 		};
 		return (
 			<ul className={style.list} key={content}>
-				<li className={style.item}>
+				<li className={style.item} onClick={hideMenu}>
 					<button onClick={handleClickNav} className={style.button}>
 						{content}
 					</button>
@@ -65,15 +62,20 @@ export default function Header() {
 			</ul>
 		);
 	};
-
 	const handleClick = () => {
 		document
 			.getElementById(scrollToHome)
 			.scrollIntoView({ behavior: "smooth" });
 	};
 
+	const hideMenu = () => {
+		setIsOpen(false);
+		document.body.style.overflow = 'visible';
+	}
+
 	const toggleMenu = () => {
 		setIsOpen((open) => !open);
+		document.body.style.overflow = isOpen ? 'visible' : 'hidden';
 	}
 
 	return (
@@ -84,6 +86,7 @@ export default function Header() {
 				${style[background ? "active" : "inactive"]}
 			`}
 		>
+			{isOpen && <div className={style.blur} onClick={hideMenu}></div>}
 			<div className={style.brand} onClick={handleClick}>
 				<img src={logo} className={style.logo} alt="logo" />
 				<h2 className={style.headingPrimary}>
@@ -91,9 +94,8 @@ export default function Header() {
 					<span className={style.highlight}>&nbsp;bielawski</span>
 				</h2>
 			</div>
-			<nav className={`${style.navMenu} ${style[isOpen ? "open" : ""]}`}>
-				{/*<Icon path={mdiWindowClose} size={1} className={style.hamburgerClose}/>*/}
-				{navLinks.map((nav) => renderNavLink(nav))}
+			<nav className={`${style.navMenu} ${style[isOpen ? "openMenu" : "closeMenu"]}`} >
+				{navLinks.map((nav) => renderNavLink(nav)) }
 			</nav>
 			<div className={style.hamburgerMenu} onClick={toggleMenu}>
 				<Icon path={mdiMenu} size={1} className={style.hamburgerOpen}/>

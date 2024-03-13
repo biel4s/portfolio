@@ -132,18 +132,14 @@
 		line-height: 1.3;
 	}
 
-	.mockup, .laptop, .preview {
-		transform: scale(0.6);
+	.mockup {
+		display: none;	//for now
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.container {
 		width: 80vw !important;
-	}
-
-	.mockup {
-		display: none;
 	}
 
 	.paragraph {
