@@ -40,7 +40,7 @@
 
 	.paragraph {
 		max-width: clamp(100px, 30vw, 1000px);
-		font-size: 1.2rem;
+		font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
 		text-align: center;
 		transition: all 1s;
 
@@ -157,6 +157,10 @@
 
 	.text, .paragraph, .form {
 		min-width: 100%;
+	}
+
+	.paragraph {
+		line-height: 1.3;
 	}
 
 	.input {

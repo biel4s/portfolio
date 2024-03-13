@@ -16,6 +16,7 @@
 	.text,
 	.description {
 		font-size: clamp(1.3rem, 1rem + 1vw, 1.5rem);
+		line-height: 1.3;
 		margin: 0;
 	}
 
