@@ -94,16 +94,8 @@
 		@include show;
 	}
 
-	.laptop {
-		max-width: 700px;
-	}
-
 	.preview {
-		position: absolute;
-		top: 27px;
-		left: 87px;
-		width: 527px;
-		height: 330px;
+		width: min(70vw, 600px);
 	}
 }
 
@@ -111,16 +103,23 @@
 
 @media screen and (max-width: 1200px) {
 	.content, .description {
+		display: flex;
 		flex-direction: column;
 		min-width: 100%;
 		padding-bottom: 0 !important;
 	}
+
+	.mockup {
+		order: 2;
+	}
+
+	.description {
+		order: 1;
+	}
 }
 
 @media screen and (max-width: 1024px) {
-	.mockup, .laptop, .preview {
-		transform: scale(0.8);
-	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -131,15 +130,15 @@
 	.paragraph {
 		line-height: 1.3;
 	}
-
-	.mockup {
-		display: none;	//for now
-	}
 }
 
 @media screen and (max-width: 480px) {
 	.container {
 		width: 80vw !important;
+	}
+
+	.mockup {
+		display: none;
 	}
 
 	.paragraph {

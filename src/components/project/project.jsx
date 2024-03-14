@@ -3,7 +3,7 @@ import useIntersection from "../../hooks/useIntersection";
 import Icon from "@mdi/react";
 import {mdiGithub} from "@mdi/js";
 import {mdiOpenInNew} from "@mdi/js";
-import mockup from "../../assets/images/mockup.png";
+
 import style from "./project.module.scss";
 
 function ProjectLeft(props) {
@@ -15,7 +15,6 @@ function ProjectLeft(props) {
             <div
                 className={`${style.mockup} ${isIntersecting.includes(refs[0].current) ? style.show : style.hiddenLeft}`}
                 ref={refs[0]}>
-                <img src={mockup} className={style.laptop} alt="laptop"/>
                 <img src={props.preview} alt="preview" className={style.preview}/>
             </div>
             <div
@@ -81,7 +80,6 @@ function ProjectRight(props) {
                     ? style.show
                     : style.hiddenRight}`}
                  ref={refs[4]}>
-                <img src={mockup} className={style.laptop} alt="mockup"/>
                 <img src={props.preview} alt="preview" className={style.preview}/>
             </div>
         </div>
