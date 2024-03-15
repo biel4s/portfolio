@@ -7,6 +7,7 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
 
 ### TODOs:
+- Most likely header breaks bottom of the page for few seconds after refreshing site
 - Animations on project section work sometimes slow and odd
 - On tablet and mobile view, buttons in side menu dont have 100% width
-- Can also add better animation for displaying side menu
+- Add better animation for displaying side menu
