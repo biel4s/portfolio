@@ -7,4 +7,5 @@ https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ```
 
 ### TODOs:
-- There is still a bug with intersection observer causing element occupy space outside the view (happens only on the right side)
+- Most likely header breaks bottom of the page for few seconds after refreshing site
+- On tablet and mobile view, buttons in side menu dont have 100% width
