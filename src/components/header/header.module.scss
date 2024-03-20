@@ -10,7 +10,7 @@
 	z-index: 50;
 	transition-property: all;
 	transition-timing-function: ease;
-	transition-duration: 0.5s;
+	transition-duration: .5s;
 
 	&.show {
 		top: 0;
@@ -93,7 +93,7 @@
 		bottom: -7px;
 		border-radius: 10px;
 		transform: scale(0, 1);
-		transition: transform 0.2s ease;
+		transition: transform .2s ease;
 	}
 
 	&:hover::before {
@@ -141,19 +141,20 @@
 		top: 0;
 		bottom: 0;
 		height: 100vh;
-		width: min(70vw, 350px);
+		width: min(70vw, 300px);
 		box-shadow: -10px 0px 30px -15px var(--navy-shadow);
-		transition: all 0.2s ease-in-out;
+
 
 		&.openMenu {
 			right: 0;
+			transition: all .3s ease-in-out;
 		}
 
 		&.closeMenu {
 			display: flex;
 			position: absolute;
-			right: -75vw;
-			transition: all 0.2s ease-in-out;
+			right: min(70vw, -300px);
+			transition: all .3s ease-in-out;
 		}
 	}
 

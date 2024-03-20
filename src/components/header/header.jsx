@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo-white.png";
 import style from "./header.module.scss";
 import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';
+import { mdiWindowClose } from '@mdi/js';
 
 //SCROLL FUNCTION
 function useScrollDirection() {
@@ -98,7 +99,10 @@ export default function Header() {
 				{navLinks.map((nav) => renderNavLink(nav)) }
 			</nav>
 			<div className={style.hamburgerMenu} onClick={toggleMenu}>
-				<Icon path={mdiMenu} size={1} className={style.hamburgerOpen}/>
+				{isOpen ?
+					<Icon path={mdiWindowClose} size={1.35} className={style.hamburgerOpen}/> :
+					<Icon path={mdiMenu} size={1.35} className={style.hamburgerOpen}/>
+				}
 			</div>
 		</header>
 	);
