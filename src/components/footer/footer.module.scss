@@ -1,11 +1,11 @@
 @import "../../sass/variables";
 
 .container {
-	//background-image: url(../assets/images/noise.png);
 	background-color: #003b4b;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+
 	.content{
 		width: 70vw;
 		height: 120px;
@@ -79,24 +79,37 @@
 
 //Media Queries
 
-@media screen and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 768px) {
+	.container {
+		.content {
+			width: 75vw;
+		}
+	}
 
+	.top {
+		justify-content: space-between;
+		.list {
+			.item {
+				margin: 0;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
-	.item {
-		margin: 0 !important;
+	.container {
+		.content {
+			width: 80vw;
+		}
 	}
 
 	.bottomRight {
 		display: flex;
 	}
 
-	.button {
-		font-size: 0.85rem !important;
+	.item {
+		.button {
+			font-size: 0.85rem;
+		}
 	}
 }

@@ -15,7 +15,9 @@ function ProjectLeft(props) {
             <div
                 className={`${style.mockup} ${isIntersecting.includes(refs[0].current) ? style.show : style.hiddenLeft}`}
                 ref={refs[0]}>
-                <img src={props.preview} alt="preview" className={style.preview}/>
+                <a href={props.netlify} target="_blank" rel="noreferrer">
+                    <img src={props.preview} alt="preview" className={style.preview}/>
+                </a>
             </div>
             <div
                 className={`${style.description} ${isIntersecting.includes(refs[1].current) ? style.show : style.hiddenRight}`}
@@ -80,7 +82,9 @@ function ProjectRight(props) {
                     ? style.show
                     : style.hiddenRight}`}
                  ref={refs[4]}>
-                <img src={props.preview} alt="preview" className={style.preview}/>
+                <a href={props.netlify} target="_blank" rel="noreferrer">
+                    <img src={props.preview} alt="preview" className={style.preview}/>
+                </a>
             </div>
         </div>
     );

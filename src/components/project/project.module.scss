@@ -31,7 +31,6 @@
 	.title {
 		color: $primary-color;
 		font-size: calc(2rem + 1vmin);
-		/*font-size: clamp(2rem, 1rem + 0.5vw, 2.5rem);*/
 	}
 
 	.year {
@@ -95,7 +94,8 @@
 	}
 
 	.preview {
-		width: min(40vw, 600px);
+		width: min(40vw, 700px);
+		cursor: pointer;
 	}
 }
 
@@ -109,12 +109,12 @@
 		padding-bottom: 0 !important;
 	}
 
-	.preview {
-		width: min(70vw, 600px) !important;
-	}
-
 	.mockup {
 		order: 2;
+
+		.preview {
+			width: min(70vw, 700px);
+		}
 	}
 
 	.description {
@@ -122,11 +122,10 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 768px) {
+	.content {
+
+	}
 	.container {
 		width: 75vw !important;
 	}
