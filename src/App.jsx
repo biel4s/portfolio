@@ -7,13 +7,6 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import style from "./sass/app.module.scss";
 import useIntersection from "./hooks/useIntersection";
-/*
-import slamdunk from "../../assets/images/mockups/slamdunk.png";
-import portfolio from "../../assets/images/mockups/portfolio.png";
-import calculator from "../../assets/images/mockups/calculator.png";
-import weatherin from "../../assets/images/mockups/weatherin.png";
-import weiser from "../../assets/images/mockups/weiser.png";
-*/
 
 export default function App() {
 

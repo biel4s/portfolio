@@ -3,7 +3,6 @@ import useIntersection from "../../hooks/useIntersection";
 import Icon from "@mdi/react";
 import {mdiGithub} from "@mdi/js";
 import {mdiOpenInNew} from "@mdi/js";
-
 import style from "./project.module.scss";
 
 function ProjectLeft(props) {

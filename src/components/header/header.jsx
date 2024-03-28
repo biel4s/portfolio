@@ -5,7 +5,6 @@ import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';
 import { mdiWindowClose } from '@mdi/js';
 
-//SCROLL FUNCTION
 function useScrollDirection() {
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
