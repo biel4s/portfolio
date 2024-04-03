@@ -11,7 +11,7 @@ function useScrollDirection() {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollY = window.pageYOffset;
+			const scrollY = window.scrollY;
 			const direction = scrollY > lastScrollY ? "down" : "up";
 			if (direction !== isHidden && scrollY > 100) {
 				if (Math.abs(scrollY - lastScrollY) > 1) {

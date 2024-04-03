@@ -154,15 +154,26 @@
 		}
 	}
 
+	.list {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.item {
+		width: 80%;
+	}
+
+	.button {
+		font-size: 1.3rem;
+		padding: 15px;
+		width: 100%;
+	}
+
 	.hamburgerMenu {
 		display: flex;
 		margin-right: 25px;
 		z-index: 101;
 	}
 
-	.button {
-		font-size: 1.3rem;
-		padding: 15px;
-		width: auto;
-	}
+
 }
