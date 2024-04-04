@@ -75,7 +75,7 @@ export default function App() {
 					github="https://github.com/biel4s/calculator-react"
 					netlify="https://react-calculator25.netlify.app"
 					technology1="React"
-					technology2="Numbers API"
+					technology2="Bootstrap"
 					technology3="Sass"
 				/>
 				<Project
@@ -87,7 +87,7 @@ export default function App() {
 					github="https://github.com/biel4s/weather-in-react"
 					netlify="https://react-weather-in.netlify.app"
 					technology1="React"
-					technology2="Weather API"
+					technology2="Bootstrap"
 					technology3="Sass"
 				/>
 				<Project
