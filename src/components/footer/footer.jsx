@@ -7,7 +7,6 @@ import style from "./footer.module.scss";
 
 export default function Footer() {
 	const currentYear = new Date().getFullYear();
-
 	const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
 	const renderFooterLink = (content) => {
@@ -18,6 +17,7 @@ export default function Footer() {
 				.getElementById(scrollToId)
 				.scrollIntoView({ behavior: "smooth" });
 		};
+
 		return (
 			<ul className={style.list} key={content}>
 				<li className={style.item}>
