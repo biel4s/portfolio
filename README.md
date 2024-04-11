@@ -58,9 +58,9 @@ Open [http://localhost:3000](http://localhost:3000) to view the project in your 
 
 ### Figma 
 
-```
-https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
-```
+
+Link to figma: https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
+
 
 ## To Do List
 
