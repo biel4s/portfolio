@@ -19,13 +19,13 @@
 1. Clone the repository:
 
 ```bash 
-git clone https://github.com/biel4s/portfolio-react
+git clone https://github.com/biel4s/portfolio
 ```
 
 2. Go to new folder:
 
 ```bash 
-cd portfolio-react
+cd portfolio
 ```
 
 3. Install all dependencies and required packages. You need [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
