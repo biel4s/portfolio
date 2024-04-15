@@ -51,7 +51,7 @@ export default function App() {
 					summary="My React portfolio showcases my proficiency in developing web applications using various frameworks. The portfolio features a collection of projects, each demonstrating my skills in implementing different technologies. In this project I have used module.scss to manage styles of the projects."
 					preview="https://i.imgur.com/ygCT5TV.png"
 					github="https://github.com/biel4s/portfolio"
-					netlify="kamilbielawski.netlify.app"
+					netlify="https://kamilbielawski.netlify.app"
 					technology1="React"
 					technology2="Sass"
 				/>
