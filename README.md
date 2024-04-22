@@ -56,12 +56,12 @@ Open [http://localhost:3000](http://localhost:3000) to view the project in your 
 
 &nbsp;
 
-### Figma 
-
+## Figma
 
 Link to figma: https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 
+&nbsp;
 
 ## To Do List
 
-- On tablet and mobile view using device toolbar, background isn't blur if it's not top of the page
+- There is a bug with backdrop-filter (https://stackoverflow.com/questions/60997948/backdrop-filter-not-working-for-nested-elements-in-chrome)
