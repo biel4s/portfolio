@@ -57,6 +57,17 @@ export default function App() {
 				/>
 				<Project
 					mockupPosition="right"
+					title="To Do List"
+					year="2023"
+					summary="Simple Angular CRUD application that was built using Angular Material UI. It allows users to add, edit and remove tasks. The main goal was to develop a fully working todo app, simultaneously enhancing my knowledge of the Angular framework."
+					preview="https://i.imgur.com/yWqJAzX.png"
+					github="https://github.com/biel4s/todo-app"
+					netlify="https://todo-list-ng16.netlify.app"
+					technology1="Angular"
+					technology2="Angular Material UI"
+				/>
+				<Project
+					mockupPosition="left"
 					title="Student affairs office"
 					year="2023"
 					summary="My first Vue application using framework Nuxt. Simply and fully responsive app designed to manage students and staff within a university setting. The website is not yet complete, as it requires few functionalities to be implemented. The primary objective of this app was to understand concept and working in Vue."
@@ -67,7 +78,7 @@ export default function App() {
 					technology2="Nuxt"
 				/>
 				<Project
-					mockupPosition="left"
+					mockupPosition="right"
 					title="Calculator"
 					year="2023"
 					summary="This web application uses the React library and the Numbersapi API. Users can enter a number or perform arithmetic operations to get a result that displays a fun fact related to that number. I have also added a button that allows users to switch between light and dark mode."
@@ -79,7 +90,7 @@ export default function App() {
 					technology3="Sass"
 				/>
 				<Project
-					mockupPosition="right"
+					mockupPosition="left"
 					title="Weather In"
 					year="2023"
 					summary="The starting point of my React journey, it fetches current weather information for a specified city using the openweathermap API. By creating this application, I wanted to practice fetching data from APIs and learn the basics of React."
@@ -91,7 +102,7 @@ export default function App() {
 					technology3="Sass"
 				/>
 				<Project
-					mockupPosition="left"
+					mockupPosition="right"
 					title="Weiser"
 					year="2022"
 					summary="My first major project was a website template for a welding company. The process of creating my own design helped me understand the importance of the attention to detail, colors, and aesthetics of a website. The main goal of the project was to apply my foundational knowledge of HTML and CSS in a practical manner."
