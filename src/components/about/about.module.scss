@@ -3,6 +3,7 @@
 .container {
 	@include theme;
 	justify-content: space-between;
+	padding-top: 50px;
 
 	.content {
 		width: 70vw;
