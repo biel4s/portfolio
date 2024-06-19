@@ -65,7 +65,7 @@
 	overflow: hidden;
 	transition: all 1s;
 	transition-delay: 0.3s;
-	animation: floating 6s ease-in-out infinite;
+	/*animation: floating 6s ease-in-out infinite;*/
 
 	&.hidden {
 		@include hiddenLeft;
