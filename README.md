@@ -65,4 +65,5 @@ Link to figma: https://www.figma.com/file/NcEsSTAwQDAg1BEpPqYiGh/Portfolio
 ## To Do List
 
 - Expand about me section, add skills list with technologies etc.,
+- Fix animation in about me section (intersection observer error),
 - There is a bug with backdrop-filter (https://stackoverflow.com/questions/60997948/backdrop-filter-not-working-for-nested-elements-in-chrome)

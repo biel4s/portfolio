@@ -33,11 +33,11 @@ function ProjectLeft(props) {
                             <Icon className={style.linkItem} path={mdiOpenInNew} size={1.2}/>
                         </a>
                     </div>
-                    <span className={style.technology}>{props.technology1}</span>
-                    <span className={style.technology}>{props.technology2}</span>
-                    {props.technology3 ? (<span className={style.technology}>
-							{props.technology3}
-						</span>) : null}
+                    <div className={style.technologies}>
+                        <span className={style.technology}>{props.technology1}</span>
+                        <span className={style.technology}>{props.technology2}</span>
+                        {props.technology3 ? (<span className={style.technology}>{props.technology3}</span>) : null}
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,15 +57,11 @@ function ProjectRight(props) {
                 <h4 className={style.year}>{props.year}</h4>
                 <p className={style.paragraph}>{props.summary}</p>
                 <div className={style.details} style={props.projectStyle}>
-					<span className={style.technology}>
-						{props.technology1}
-					</span>
-                    <span className={style.technology}>
-						{props.technology2}
-					</span>{props.technology3 ? (
-                    <span className={style.technology}>
-							{props.technology3}
-						</span>) : null}
+                    <div className={style.technologies}>
+                        <span className={style.technology}>{props.technology1}</span>
+                        <span className={style.technology}>{props.technology2}</span>
+                        {props.technology3 ? (<span className={style.technology}>{props.technology3}</span>) : null}
+                    </div>
                     <div className={style.links} style={{marginLeft: "15px"}}>
                         <a href={props.github} target="_blank" rel="noreferrer">
                             <Icon className={style.linkItem} path={mdiGithub} size={1.2}/>
