@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import useIntersection from "../../hooks/useIntersection";
 import Icon from "@mdi/react";
 import {mdiGithub} from "@mdi/js";
@@ -90,10 +90,21 @@ function ProjectRight(props) {
 }
 
 export default function Project(props) {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize)
+    }, []);
+
     const projectStyle = {
-        textAlign: props.mockupPosition === "left" ? "end" : "start",
+        textAlign: props.mockupPosition === "left" && windowWidth > 480 ? "end" : "start",
         justifyContent:
-            props.mockupPosition === "left" ? "flex-end" : "flex-start",
+            props.mockupPosition === "left" && windowWidth > 480 ? "flex-end" : "flex-start",
     };
 
     const content =
