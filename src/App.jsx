@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
 import About from "./components/about/about";
@@ -7,6 +7,7 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import style from "./sass/app.module.scss";
 import useIntersection from "./hooks/useIntersection";
+import useWindowSize from "./hooks/useWindowSize";
 
 export default function App() {
 
@@ -14,8 +15,38 @@ export default function App() {
 	const options = {rootMargin: "25px"};
 	const isIntersecting = useIntersection(refs, options);
 
+	const size = useWindowSize();
+	const app = useRef();
+	const scrollContainer = useRef();
+
+	const smoothConfigs = {
+		ease: 0.04,
+		current: 0,
+		previous: 0,
+		rounded: 0
+	}
+
+	useEffect(() => {
+		document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`
+	}, [size.height]);
+
+	useEffect(() => {
+		requestAnimationFrame(() => smoothScrolling());
+	}, [])
+
+	const smoothScrolling = () => {
+		smoothConfigs.current = window.scrollY;
+		smoothConfigs.previous += (smoothConfigs.current - smoothConfigs.previous) * smoothConfigs.ease;
+		smoothConfigs.rounded = Math.round(smoothConfigs.previous * 100) / 100;
+
+		scrollContainer.current.style.transform = `translateY(-${smoothConfigs.rounded}px)`;
+
+		requestAnimationFrame(() => smoothScrolling());
+	}
+
 	return (
-		<div className={style.container}>
+		<div  ref={app} className={style.container}>
+			<div ref={scrollContainer} className={style.scroll}>
 			<Header />
 			<Home />
 			<About />
@@ -116,6 +147,7 @@ export default function App() {
 			</div>
 			<Contact />
 			<Footer />
+		</div>
 		</div>
 	);
 }
