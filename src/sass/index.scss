@@ -8,3 +8,23 @@ body {
 	font-family: $primary-font;
 }
 
+::-webkit-scrollbar {
+	width: 1em;
+}
+
+::-webkit-scrollbar-track {
+	background: #17181d;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #00AEE0;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #009AC7;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #005D7A;
+}
